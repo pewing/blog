@@ -1,7 +1,4 @@
 == Philip's Place for Random Things
 
-A palce for me to mess around with rails. Clearly a work in progress. 
+A place for me to mess around with rails. Clearly a work in progress.
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
