@@ -1,27 +1,6 @@
-== README
+== Philip's Place for Random Things
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A palce for me to mess around with rails. Clearly a work in progress. 
 
 
 Please feel free to use a different markup language if you do not plan to run
