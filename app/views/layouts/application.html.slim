@@ -1,13 +1,13 @@
 doctype html
 html lang="en"
   head
-    title "Philip's Website"
+    title Philip's Website
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
 
   body class="#{controller_name}"
     header
-      = render 'layouts/header'
+      = render 'layouts/navbar'
     /== yield(:after_header)
     == yield
 

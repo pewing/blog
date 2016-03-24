@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   scope controller: 'pages' do
     get 'home'
+    get 'blog'
+    get 'about'
+    get 'contact'
   end
 
 

@@ -1,0 +1,51 @@
+#navbar {
+  width: 100%;
+
+  .container {
+    background-color: #414243;
+    margin: auto;
+    width: 80%;
+    font-family: "Lucida Console", Monaco, monospace;
+
+    .navbar-box {
+      border-style: solid;
+      border: 10px;
+      //border-color: #999999;
+      width: 23%;
+      text-align: center;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  .navbar-logo {
+    float: left;
+  }
+
+  .navbar-pages {
+    //float: right;
+  }
+
+  a {
+    color: #F7F7F7;
+
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #ea8602;
+    }
+  }
+
+  ul li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+
+
+}
+
+
+
+
