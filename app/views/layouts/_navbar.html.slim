@@ -1,13 +1,16 @@
 nav#navbar.navbar.navbar-whole
   .container
-    .navbar-logo.navbar-box
-      /Get some sort of logo here
-      = link_to "PE", root_path
-    .navbar-pages
-      ul
-        li.navbar-box
-          = link_to 'Blog', blog_path
-        li.navbar-box
-          = link_to 'About Me', about_path
-        li.navbar-box
-          = link_to 'Contact', contact_path
+    ul
+      li.navbar-box.navbar-logo
+        /Get some sort of logo here
+        = link_to "PE", root_path
+      #navbar-pages
+        li.navbar-box.navbar-page
+          = link_to 'Blog', root_path
+          /blog_path
+        li.navbar-box.navbar-page
+          = link_to 'About Me', root_path
+          /about_path
+        li.navbar-box.navbar-page
+          = link_to 'Contact', root_path
+          /contact_path
