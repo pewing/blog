@@ -1,0 +1,30 @@
+#home {
+  //height: 100%;
+}
+
+#message {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+
+  p {
+    height: 100%;
+    line-height: 50%;
+  }
+
+}
+
+#image {
+
+  img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 60%;
+  }
+}
+
+
