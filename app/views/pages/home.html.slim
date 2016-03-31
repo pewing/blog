@@ -1,0 +1,10 @@
+#home
+  #message
+    p
+      - if @message
+        = @message
+      - else
+        | There is no message passed from controller
+
+  #image
+    = image_tag 'logo_transparent.png'

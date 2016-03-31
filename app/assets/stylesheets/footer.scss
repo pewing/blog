@@ -1,0 +1,29 @@
+#footer {
+  width: 100%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+
+  .container {
+    background-color: #292a2b;
+    margin: auto;
+    width: 40%;
+    height: 50px;
+    font-family: "Arial", Monaco, monospace;
+    color: #F7F7F7;
+    text-align: center;
+    //border: 15px solid red;
+  }
+
+  a {
+    color: #F7F7F7;
+
+    &:link {
+      text-decoration: none;
+    }
+  }
+
+
+
+
+}

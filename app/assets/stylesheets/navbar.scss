@@ -1,0 +1,58 @@
+#navbar {
+  width: 100%;
+  margin-top: 0;
+
+  .container {
+    background-color: #292a2b;
+    margin: auto;
+    width: 80%;
+    font-family: "Arial", Monaco, monospace;
+    text-align: center;
+    //transform: skewY(45deg);
+
+    .navbar-box {
+      //float: left;
+      height: 50px;
+      line-height: 50px;
+      width: 200px;
+      //text-align: center;
+      vertical-align: middle;
+      //padding: 50%;
+    }
+  }
+
+  .navbar-logo {
+    float: left;
+  }
+
+  #navbar-pages {
+    float: right;
+  }
+
+  a {
+    color: #F7F7F7;
+
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #ea8602;
+    }
+  }
+
+  ul li {
+    display: inline-block;
+    list-style-type: none;
+    //width: 25%;
+    margin: 0;
+    //border: 1px solid red;
+    //float: left;
+  }
+
+
+
+}
+
+
+
+
