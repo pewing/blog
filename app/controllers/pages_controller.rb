@@ -4,4 +4,10 @@ class PagesController < ApplicationController
     @message = "This is a work in progress. Come back later!"
     puts @message
   end
+
+  def about
+    @message = "You are now on 'About Me'"
+
+  end
+
 end

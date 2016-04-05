@@ -7,17 +7,15 @@
     margin: auto;
     width: 80%;
     font-family: "Arial", Monaco, monospace;
-    text-align: center;
+    //text-align: center;
     //transform: skewY(45deg);
 
     .navbar-box {
-      //float: left;
       height: 50px;
       line-height: 50px;
-      width: 200px;
-      //text-align: center;
+      width: 125px;
       vertical-align: middle;
-      //padding: 50%;
+      //margin: 0 auto;
     }
   }
 
@@ -31,6 +29,7 @@
 
   a {
     color: #F7F7F7;
+    padding: 10px 40px 4px 40px;
 
     &:link {
       text-decoration: none;

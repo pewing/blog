@@ -13,18 +13,69 @@
     height: 100%;
     line-height: 50%;
   }
-
 }
 
 #image {
+  position: inherit;
+  margin: auto;
+}
 
+#logo {
   img {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 60%;
-    width: 60%;
+    position: absolute;
+    //display:block;
+    left: 50%;
+    margin-left: -383px;
+    z-index: 3;
+    //margin-right: auto;
+    //height: 80%;
+    //width: 80%;
   }
 }
 
+#sub-images {
+  position: absolute;
+  left: 50.7%;
+  //margin-left: -160.7px;
+  margin-left: 0;
+  top: 21.2%;
 
+  //img {
+  //  //position: absolute;
+  //  z-index: 1;
+  //  //right: 18.3%;
+  //  //left: 50.7%;
+  //  ////margin-left: -160.7px;
+  //  //margin-left: 0;
+  //  //top: 21.8%;
+  //
+  //  //display:block;
+  //  //margin-left: auto;
+  //  //margin-right: auto;
+  //  //height: 36%;
+  //  //width: 36%;
+  //}
+
+  div {
+    position: absolute;
+  }
+
+}
+
+#profile {
+  z-index: 1;
+  //img {
+  //  z-index: 1;
+  //}
+}
+
+#blank {
+  background-color: #292a2b;
+  //background-color: white;
+  height: 182px;
+  width: 317px;
+  z-index: 2;
+}
+
+//TODO:
+//1. When window becomes too small, #sub-image moves up

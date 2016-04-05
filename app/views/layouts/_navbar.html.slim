@@ -1,16 +1,18 @@
 nav#navbar.navbar.navbar-whole
   .container
     ul
-      li.navbar-box.navbar-logo
-        /Get some sort of logo here
-        = link_to "PE", root_path
+      - unless content_for(:title) == 'Home'
+        li.navbar-box.navbar-logo
+          /Get some sort of logo here
+          = link_to image_tag('logo-header.png'), root_path
+
       #navbar-pages
-        li.navbar-box.navbar-page
+        li.navbar-box.navbar-page#blog-header
           = link_to 'Blog', root_path
           /blog_path
-        li.navbar-box.navbar-page
-          = link_to 'About Me', root_path
+        li.navbar-box.navbar-page#about-header
+          = link_to 'About Me', about_path
           /about_path
-        li.navbar-box.navbar-page
+        li.navbar-box.navbar-page#contact-header
           = link_to 'Contact', root_path
           /contact_path
