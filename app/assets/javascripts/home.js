@@ -1,11 +1,11 @@
 $('.pages.home').ready(function() {
+
+    var $sub_image = $('#sub-image');
+
     $('#about-header').hover(function() {
-        $('#profile').css('z-index', 2);
-        $('#blank').css('z-index', 1);
-        console.log("HOVER");
+        console.log("hi");
+        $sub_image.css('background-image', 'url("assets/profile.jpg")');
     }, function() {
-        $('#profile').css('z-index', 1);
-        $('#blank').css('z-index', 2);
-        console.log("UNHOVER");
+        $sub_image.css('background-image', 'none');
     });
 });
