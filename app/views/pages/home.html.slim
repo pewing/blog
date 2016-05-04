@@ -1,20 +1,23 @@
 = title 'Home'
 
 #home
-  #message
+  .row#message
     p
       - if @message
         = @message
       - else
         | There is no message passed from controller
 
-  #image
-    #logo
-      = image_tag 'logo_hole.png'
-    #sub-images
-      #profile
-        = image_tag 'profile.jpg'
-      #blank
+  .row-fluid.clearfix#image
+    .col-xs-12
+      #logo
+        = image_tag 'logo_hole.png', class: 'img-responsive'
+        /#globe
+        /  = image_tag 'globe-test.png'
+        #sub-image
+      /#profile
+      /  = image_tag 'profile.jpg'
+      /#blank
 
     /#anchor
     /#cross

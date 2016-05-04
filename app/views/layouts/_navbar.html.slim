@@ -1,18 +1,19 @@
-nav#navbar.navbar.navbar-whole
+nav#navbar.navbar.navbar-default
   .container
-    ul
+    .navbar-header
       - unless content_for(:title) == 'Home'
-        li.navbar-box.navbar-logo
-          /Get some sort of logo here
+        .navbar-brand
           = link_to image_tag('logo-header.png'), root_path
+    ul.nav.navbar-nav#navbar-pages
+      li.navbar-box.navbar-page#blog-header
+        = link_to 'Blog', root_path
+        /blog_path
+      li.navbar-box.navbar-page#about-header
+        = link_to 'About Me', about_path
+        /about_path
+      li.navbar-box.navbar-page#contact-header
+        = link_to 'Contact', "#contact-modal", :class=>"btn", "data-toggle"=>"modal"
+        /button#contact-button.btn.btn-success data-target="#contact-modal" data-toggle="modal"
+        /contact_path
 
-      #navbar-pages
-        li.navbar-box.navbar-page#blog-header
-          = link_to 'Blog', root_path
-          /blog_path
-        li.navbar-box.navbar-page#about-header
-          = link_to 'About Me', about_path
-          /about_path
-        li.navbar-box.navbar-page#contact-header
-          = link_to 'Contact', root_path
-          /contact_path
+= render partial: '/layouts/contact'

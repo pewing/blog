@@ -1,0 +1,24 @@
+#about {
+  margin: auto;
+  width: 600px;
+
+  h3 {
+
+  }
+
+  p {
+    font-size: 80%;
+  }
+
+  a {
+    color: #F7F7F7;
+    font-weight: bold;
+
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #ea8602;
+    }
+  }
+}

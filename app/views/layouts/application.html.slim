@@ -10,7 +10,8 @@ html lang="en"
     header
       = render 'layouts/navbar'
     /== yield(:after_header)
-    == yield
+    .container-fluid
+      == yield
 
   footer
     = render 'layouts/footer'
