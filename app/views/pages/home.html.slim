@@ -1,12 +1,12 @@
 = title 'Home'
 
-#home
-  .row#message
-    p
-      - if @message
-        = @message
-      - else
-        | There is no message passed from controller
+.container-fluid#home
+  /.row#message
+  /  p
+  /    - if @message
+  /      = @message
+  /    - else
+  /      | There is no message passed from controller
 
   .row-fluid.clearfix#image
     .col-xs-12

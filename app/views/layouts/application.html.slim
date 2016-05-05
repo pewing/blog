@@ -7,10 +7,10 @@ html lang="en"
     = favicon_link_tag 'favicon.ico'
 
   body class="#{controller_name}"
-    header
-      = render 'layouts/navbar'
-    /== yield(:after_header)
-    .container-fluid
+    .wrap
+      header
+        = render 'layouts/navbar'
+      /== yield(:after_header)
       == yield
 
   footer

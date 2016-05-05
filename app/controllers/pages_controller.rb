@@ -10,4 +10,8 @@ class PagesController < ApplicationController
 
   end
 
+  def work
+
+  end
+
 end

@@ -7,27 +7,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-
-    //ul li {
-    //  display: inline-block;
-    //  list-style-type: none;
-    //  margin: auto;
-    //}
   }
-
-  //.container {
-  //  background-color: #292a2b;
-  //  margin: auto;
-  //  width: 80%;
-  //
-  //  .navbar-box {
-  //    height: 50px;
-  //    line-height: 50px;
-  //    width: 125px;
-  //    vertical-align: middle;
-  //    //margin: 0 auto;
-  //  }
-  //}
 
   .navbar-logo {
     float: left;
@@ -43,6 +23,11 @@
     &:hover {
       color: #ea8602;
     }
+  }
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
   }
 
 

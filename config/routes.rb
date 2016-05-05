@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     get 'home'
     get 'blog'
     get 'about'
+    get 'work'
     get 'contact'
   end
 
