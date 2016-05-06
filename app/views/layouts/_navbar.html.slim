@@ -3,7 +3,7 @@ nav#navbar.navbar.navbar-default
     .navbar-header
       - unless content_for(:title) == 'Home'
         .navbar-brand
-          = link_to image_tag('logo-header.png'), root_path
+          = link_to image_tag('logo_header.png'), root_path
     ul.nav.navbar-nav#navbar-pages
       /li.navbar-box.navbar-page#blog-header
       /  = link_to 'Blog', root_path

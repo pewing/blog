@@ -15,7 +15,7 @@ $blue8: #171E23;
   //margin: auto;
   //width: 600px;
 
-  //background-color: #172027;
+  background-color: $blue1;
   font-size: $standard-font-size;
 
   h3 {
@@ -44,6 +44,11 @@ $blue8: #171E23;
     //color: #DFE5F7;
 
     //background-color: white;
+
+    #profile_image {
+      background-image: url("assets/profile.jpg");
+    }
+
   }
 
   #about-anything-else {
