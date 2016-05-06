@@ -1,27 +1,63 @@
 = title 'About Me'
-.container
-  .row#work
-    .col-xs-12#work-basics
-      h3 A little about me
+.container-fluid#about
+  .row
+    h4.text-center
+      | Basically...
+  .row#about-me
+
+    .col-xs-8
       p
         | I'm a San Francisco-based software engineer whose background is mainly
           Rails, C++, and Python. I graduated from Hamilton College in 2015, and
-          moved to the Bay shortly afterwards. I made this website to ... ?
+          moved to the Bay Area shortly afterwards.
+    .col-xs-4
+      = image_tag 'profile.jpg', class: 'img-responsive'
 
-      #work-past
-        h4 What I've been doing
-        p
-          | The latest company I worked at was High Fidelity, a company that's building
-            an open-source VR platform.
-            They're creating some very exciting stuff, and I encourage you to check them
-            out&nbsp
-          = link_to 'here', 'https://www.highfidelity.io/'
-          | .
+  .row#about-work
 
-        p
-          |
+  .row#about-school
+    .col-xs-8
 
-    #personal
+    .col-xs-4
+
+  .row#about-resume
+
+  .row#about-logo
+
+  .row#about-anything-else.text-center
+    h4 Want to know anything else?
+    p
+      | Feel free to&nbsp
+      = link_to 'contact me', contact_path
+      | , or check me out on Github, LinkedIn, or AngelList below
+      .glyphicon.glyphicon-arrow-down
+
+
+
+
+
+  /.row#work
+  /  .col-xs-12#work-basics
+  /    h3 A little about me
+  /    p
+  /      | I'm a San Francisco-based software engineer whose background is mainly
+  /        Rails, C++, and Python. I graduated from Hamilton College in 2015, and
+  /        moved to the Bay shortly afterwards. I made this website to ... ?
+  /
+  /    #work-past
+  /      h4 What I've been doing
+  /      p
+  /        | The latest company I worked at was High Fidelity, a company that's building
+  /          an open-source VR platform.
+  /          They're creating some very exciting stuff, and I encourage you to check them
+  /          out&nbsp
+  /        = link_to 'here', 'https://www.highfidelity.io/'
+  /        | .
+  /
+  /      p
+  /        |
+  /
+  /  #personal
 
 
   .row#personal

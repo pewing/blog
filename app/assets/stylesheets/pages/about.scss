@@ -1,13 +1,29 @@
+$standard-font-size: 20px;
+$blue1: #DFE5F7;
+$blue2: #8295A0;
+$blue3: #738897;
+$blue4: #608093;
+$blue5: #517285;
+//$blue6: #
+$blue6: #37454F;
+$blue7: #26333A;
+$blue8: #171E23;
+
+
+
 #about {
-  margin: auto;
-  width: 600px;
+  //margin: auto;
+  //width: 600px;
+
+  //background-color: #172027;
+  font-size: $standard-font-size;
 
   h3 {
 
   }
 
   p {
-    font-size: 80%;
+
   }
 
   a {
@@ -21,4 +37,27 @@
       color: #ea8602;
     }
   }
+
+  #about-me {
+    background-color: $blue8;
+    color: $blue3;
+    //color: #DFE5F7;
+
+    //background-color: white;
+  }
+
+  #about-anything-else {
+    color: $blue8;
+    background-color: $blue1;
+
+    a {
+      //color: #F7F7F7;
+      font-weight: bold;
+
+      &:hover {
+        color: #ea8602;
+      }
+    }
+  }
+
 }
