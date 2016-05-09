@@ -1,4 +1,13 @@
 #home {
+  //position: relative;
+
+
+  .vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    width: 100%;
+  }
 
   #image {
     //margin: auto 0;
@@ -24,19 +33,6 @@
         z-index: -1;
         background-size: contain;
       }
-    }
-  }
-
-  #message {
-    height: 10%;
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-
-    p {
-      height: 100%;
-      line-height: 50%;
     }
   }
 }

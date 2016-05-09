@@ -16,15 +16,68 @@ $blue8: #171E23;
   //width: 600px;
 
   background-color: $blue1;
+
   font-size: $standard-font-size;
 
-  h3 {
+  #logo {
+    background-color: #171E23;
+    width: 100%;
+    height: 100%;
 
+    #dots {
+      max-width: 766px;
+      max-height: 272px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        position: absolute;
+        background-color: red;
+        &:hover {
+          background-color: blue;
+        }
+
+      }
+
+
+      #dot-sf {
+        top: 76.2%;
+        left: 7.9%;
+      }
+      #dot-ott {
+        top: 59.2%;
+        left: 35.9%;
+      }
+      #dot-ham {
+        top: 63.8%;
+        left: 36.2%;
+      }
+      #dot-nyc {
+        top: 70%;
+        left: 37%;
+      }
+
+      #dot-str {
+        top: 57.5%;
+        left: 85.3%;
+      }
+
+    }
+
+
+
+    img {
+      margin: 0 auto;
+    }
   }
 
-  p {
-
-  }
 
   a {
     color: #F7F7F7;
@@ -62,6 +115,17 @@ $blue8: #171E23;
       &:hover {
         color: #ea8602;
       }
+    }
+  }
+
+  @media (max-width: 816px) {
+    #logo > #dots {
+      //#dots {
+        margin: 0 15px;
+        //padding: 0 15px;
+        //width: 100%;
+        //border-color: green;
+      //}
     }
   }
 
