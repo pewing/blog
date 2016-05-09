@@ -39,7 +39,7 @@ $blue8: #171E23;
         height: 6px;
         border-radius: 3px;
         position: absolute;
-        background-color: red;
+        background-color: $blue1;
         &:hover {
           background-color: blue;
         }
@@ -61,10 +61,17 @@ $blue8: #171E23;
       }
       #dot-nyc {
         top: 70%;
-        left: 37%;
+        left: 36.9%;
       }
-
+      #dot-sthlm {
+        top: 20%;
+        left: 92.3%;
+      }
       #dot-str {
+        top: 51.5%;
+        left: 86.1%;
+      }
+      #dot-gen {
         top: 57.5%;
         left: 85.3%;
       }
@@ -122,6 +129,14 @@ $blue8: #171E23;
     #logo > #dots {
       //#dots {
         margin: 0 15px;
+
+        .dot {
+          min-width: 1px;
+          min-height: 1px;
+          width: 0.78%;
+          height: 2.2%;
+        }
+
         //padding: 0 15px;
         //width: 100%;
         //border-color: green;
