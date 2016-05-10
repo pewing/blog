@@ -16,7 +16,6 @@
 !/log/.keep
 /tmp
 
-/config/secrets.yml
 /config/environments/test.rb
 /config/environments/development.rb
 
