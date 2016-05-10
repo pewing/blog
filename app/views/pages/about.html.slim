@@ -1,18 +1,31 @@
 = title 'About Me'
 .container-fluid#about
-  .row-fluid#logo
+  .row-fluid.clearfix#logo
     /.vertical-center
     .col-xs-12#image
       #logo
         = image_tag 'logo_hole.png', class: 'img-responsive'
+        #sub-image
         .container-fluid#dots
-          #dot-sf.dot
-          #dot-ott.dot
-          #dot-ham.dot
-          #dot-nyc.dot
-          #dot-sthlm.dot
-          #dot-str.dot
-          #dot-gen.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-sf.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-ott.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-ham.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-nyc.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-sthlm.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-str.dot
+          = link_to about_path(anchor: 'about-me') do
+            #dot-gen.dot
+  .row#logo-location
+    h3.text-center#hover-location
+      /| About Me
+    br
+    br
 
   /br
   /br
@@ -38,10 +51,14 @@
 
   .row#about-school
     .col-xs-8
-
+      p
+        | I went to Hamilton College, a small liberal arts college in upstate New York. I graduated in 2015 degrees in
+          Computer Science and Economics. I was also a varsity rower for all four years.
     .col-xs-4
+      p
+        |
 
-  .row#about-resume
+  .row#about-interests
 
   .row#about-logo
 
