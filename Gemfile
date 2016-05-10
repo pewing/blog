@@ -30,8 +30,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim-rails'
 
 # Use heroku sercrets to access secrets.yml without adding to git
-gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
-
+# gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
+# \
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
