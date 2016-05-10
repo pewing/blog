@@ -2,7 +2,7 @@ $('.pages.home').ready(function() {
 
     var $sub_image = $('#sub-image');
 
-    var reset_background = function(){
+    var reset_background = function() {
         $sub_image.css('background-image', 'none');
     };
 
