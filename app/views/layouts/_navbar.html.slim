@@ -9,12 +9,13 @@ nav#navbar.navbar.navbar-default
       /  = link_to 'Blog', root_path
         /blog_path
       li.navbar-box.navbar-page#about-header
-        = link_to 'About', about_path
+        = link_to 'About', root_path
         /about_path
       li.navbar-box.navbar-page#work-header
-        = link_to 'Work', work_path
+        = link_to 'Work', root_path
       li.navbar-box.navbar-page#contact-header
-        = link_to 'Contact', "#contact-modal", :class=>"btn", "data-toggle"=>"modal"
+        = link_to 'Contact', root_path
+        /"#contact-modal", :class=>"btn", "data-toggle"=>"modal"
         /button#contact-button.btn.btn-success data-target="#contact-modal" data-toggle="modal"
         /contact_path
 

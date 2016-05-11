@@ -1,28 +1,17 @@
 = title 'Home'
 
 .container-fluid#home
-  /.row#message
-  /  p
-  /    - if @message
-  /      = @message
-  /    - else
-  /      | There is no message passed from controller
   .vertical-center
     .row-fluid#image
       .col-xs-12
         #logo
           = image_tag 'logo_hole.png', class: 'img-responsive'
-          /#globe
-          /  = image_tag 'globe-test.png'
           #sub-image
-      /#profile
-      /  = image_tag 'profile.jpg'
-      /#blank
+            #profile-hover.hidden-hover
+              = image_tag 'profile.jpg', class: 'img-responsive'
+            #work-hover.hidden-hover
+              = image_tag 'work.png', class: 'img-responsive'
+            #contact-hover.hidden-hover
+              = image_tag 'contact.png', class: 'img-responsive'
 
-    /#anchor
-    /#cross
-    /#stockholm
-    /#strasbourg
-    /#geneva
-
-      #TODO: Double size of picture of code for 'work.png', then halve size
+      /#TODO: Double size of picture of code for 'work.png', then halve size

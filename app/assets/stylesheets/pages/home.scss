@@ -32,6 +32,12 @@
         max-height: 115px;
         z-index: -1;
         background-size: contain;
+
+        .hidden-hover {
+          display: none;
+          position: inherit;
+        }
+
       }
     }
   }

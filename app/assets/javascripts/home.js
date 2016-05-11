@@ -1,21 +1,31 @@
 $('.pages.home').ready(function() {
 
-    var $sub_image = $('#sub-image');
+    var $profile_hover = $('#profile-hover');
+    var $work_hover = $('#work-hover');
+    var $contact_hover = $('#contact-hover');
 
-    var reset_background = function() {
-        $sub_image.css('background-image', 'none');
-    };
+    function reset_background(img) {
+        //$sub_image.css('background-image', 'none');
+        console.log("hi");
+        img.css('display', 'none');
+    }
 
     $('#about-header').hover(function() {
-        $sub_image.css('background-image', 'url("assets/profile.jpg")');
-    }, reset_background);
+        $profile_hover.css('display', 'block');
+    }, function() {
+        reset_background($profile_hover)
+    });
 
     $('#work-header').hover(function() {
-        $sub_image.css('background-image', 'url("assets/work.png")');
-    }, reset_background);
-
+        $work_hover.css('display', 'block');
+    }, function() {
+        reset_background($work_hover)
+    });
+    //
     $('#contact-header').hover(function() {
-        $sub_image.css('background-image', 'url("assets/contact.png")');
-    }, reset_background);
+        $contact_hover.css('display', 'block');
+    }, function() {
+        reset_background($contact_hover)
+    });
 
 });
