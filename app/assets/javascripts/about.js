@@ -1,4 +1,4 @@
-$('.pages.ready').ready(function() {
+$('.pages.about').ready(function() {
 
     var $location_hover = $('#hover-location');
 
@@ -9,6 +9,12 @@ $('.pages.ready').ready(function() {
     $('#dot-sf').hover(function() {
         $location_hover.text('About Me').fadeIn(600);
     }, reset_location);
+
+    $("#image").affix({
+        offset: { top: 0 }
+    });
+
+
 
 
 
