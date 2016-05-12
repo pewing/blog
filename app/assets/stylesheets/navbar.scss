@@ -15,16 +15,23 @@
     float: left;
   }
 
-  a {
-    color: #DFE5F7;
+  .navbar-box {
+    padding: 25px 1px 4px 1px;
+  }
 
-    padding: 10px 40px 4px 40px;
+  a {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #DFE5F7;
+    //color: #8295A0;
+    //color: #738897;
 
     &:link {
       text-decoration: none;
     }
     &:hover {
-      color: #ea8602;
+      //color: #ea8602;
+      color: #517285;
     }
   }
 
@@ -36,7 +43,6 @@
   .navbar-nav > li {
     float: left;
   }
-
 }
 
 

@@ -9,14 +9,17 @@ nav#navbar.navbar.navbar-default
       /  = link_to 'Blog', root_path
         /blog_path
       li.navbar-box.navbar-page#about-header
-        a.btn.btn-mini href="javascript:;"
-          | About
-        /= link_to 'About', root_path
-        /about_path
+        /a.btn.btn-mini href="javascript:;"
+        /  | About
+        = link_to 'About', about_path
+      /li.navbar-box.navbar-page
+      /  | /
       li.navbar-box.navbar-page#work-header
         a.btn.btn-mini href="javascript:;"
           | Work
         /= link_to 'Work', root_path
+      /li.navbar-box.navbar-page
+      /  | /
       li.navbar-box.navbar-page#contact-header
         a.btn.btn-mini href="javascript:;"
           | Contact
