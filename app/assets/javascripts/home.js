@@ -51,19 +51,7 @@ $('.pages.home').ready(function() {
         reset_background($contact_hover);
     });
 
-    //$("#about-header").click(function showAlert() {
-    //    $nothing_alert.show();
-    //    $nothing_alert.fadeTo(2000, 500).slideUp(500, function () {
-    //        $(this).hide();
-    //    });
-    //});
     $("#work-header").click(function showAlert() {
-        $nothing_alert.show();
-        $nothing_alert.fadeTo(2000, 500).slideUp(500, function () {
-            $(this).hide();
-        });
-    });
-    $("#contact-header").click(function showAlert() {
         $nothing_alert.show();
         $nothing_alert.fadeTo(2000, 500).slideUp(500, function () {
             $(this).hide();

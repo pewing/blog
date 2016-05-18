@@ -14,3 +14,10 @@ body {
 .wrap {
   min-height: 100%;
 }
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  width: 100%;
+}
