@@ -16,15 +16,15 @@
   }
 
   .navbar-box {
-    padding: 25px 1px 4px 1px;
+    padding: 25px 6px 4px 6px;
   }
 
   a {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    //padding-top: 0;
+    //padding-bottom: 0;
     color: #DFE5F7;
-    //color: #8295A0;
-    //color: #738897;
+    font-family: 'Droid Sans', sans-serif;
 
     &:link {
       text-decoration: none;

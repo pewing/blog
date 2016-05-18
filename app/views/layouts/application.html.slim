@@ -4,6 +4,7 @@ html lang="en"
     meta name="google-site-verification" content="eovjVmt8N0yIodGsZRt_5DT6F3puWOW7bxC-9sWfNDg"
     meta property="og:image" content='favicon.ico'
     title = content_for?(:title) ? "#{yield(:title)}" : "Philip's Website"
+    link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
     = favicon_link_tag 'favicon.ico'
@@ -17,22 +18,3 @@ html lang="en"
 
   footer
     = render 'layouts/footer'
-
-
-
-
-
-/<!DOCTYPE html>
-/<html>
-/<head>
-/  <title>Blog</title>
-/  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-/  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-/  <%= csrf_meta_tags %>
-/</head>
-/<body>
-/
-/<%= yield %>
-/
-/</body>
-/</html>

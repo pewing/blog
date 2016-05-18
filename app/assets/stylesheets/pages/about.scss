@@ -12,85 +12,21 @@ $blue8: #171F24;
 
 
 #about {
-  //margin: auto;
-  //width: 600px;
+  font-family: 'Droid Sans', sans-serif;
 
   background-color: $blue8;
+  color: $blue2;
 
   font-size: $standard-font-size;
 
-  #logo {
-    background-color: $blue8;
-    width: 100%;
-    height: 100%;
+  margin-bottom: 40px;
 
-
-    #dots {
-      max-width: 766px;
-      max-height: 272px;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 0;
-
-      .dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 3px;
-        position: absolute;
-        background-color: $blue1;
-        &:hover {
-          background-color: blue;
-        }
-
-      }
-      #dot-sf {
-        top: 76.2%;
-        left: 7.9%;
-      }
-      #dot-ott {
-        top: 59.2%;
-        left: 35.9%;
-      }
-      #dot-ham {
-        top: 63.8%;
-        left: 36.2%;
-      }
-      #dot-nyc {
-        top: 70%;
-        left: 36.9%;
-      }
-      #dot-sthlm {
-        top: 20%;
-        left: 92.3%;
-      }
-      #dot-str {
-        top: 51.5%;
-        left: 86.1%;
-      }
-      #dot-gen {
-        top: 57.5%;
-        left: 85.3%;
-      }
-    }
-
-    img {
-      margin: 0 auto;
-    }
-  }
-
-  #logo-location {
-    height: 100px;
-    color: $blue2;
-    #hover-location {
-      display: none;
-    }
+  .row {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   a {
-    color: $blue1;
     font-weight: bold;
 
     &:link {
@@ -102,18 +38,122 @@ $blue8: #171F24;
   }
 
   #about-me {
-    //background-color: $blue8;
-    color: $blue2;
-    //color: #DFE5F7;
+    background-color: $blue8;
+    color: $blue1;
+
+    #about-me-text {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  #about-work {
+    background-color: $blue1;
+    color: $blue8;
+
+    a {
+      color: $blue5;
+    }
+  }
+
+  #about-school {
 
   }
+
+  #about-interests {
+    background-color: $blue1;
+    color: $blue8;
+  }
+
+  #about-logo {
+    padding-bottom: 0;
+  }
+
+  #logo {
+    background-color: $blue8;
+    width: 100%;
+    height: 100%;
+
+    #image {
+      height: 100%;
+
+      #dots {
+        max-width: 766px;
+        max-height: 272px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+
+        .dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+          position: absolute;
+          background-color: $blue1;
+          &:hover {
+            background-color: blue;
+          }
+
+        }
+        #dot-sf {
+          top: 76.2%;
+          left: 7.9%;
+        }
+        #dot-ott {
+          top: 59.2%;
+          left: 35.9%;
+        }
+        #dot-ham {
+          top: 63.8%;
+          left: 36.2%;
+        }
+        #dot-nyc {
+          top: 70%;
+          left: 36.9%;
+        }
+        #dot-sthlm {
+          top: 20%;
+          left: 92.3%;
+        }
+        #dot-str {
+          top: 51.5%;
+          left: 86.1%;
+        }
+        #dot-gen {
+          top: 57.5%;
+          left: 85.3%;
+        }
+      }
+
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #logo-location {
+    height: 50px;
+    color: $blue2;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    #hover-location {
+      display: none;
+
+    }
+  }
+
 
   #about-anything-else {
     color: $blue8;
     background-color: $blue1;
+    //padding-bottom: 0;
 
     a {
-      //color: #F7F7F7;
+      color: $blue5;
       font-weight: bold;
 
       &:hover {
@@ -123,21 +163,15 @@ $blue8: #171F24;
   }
 
   @media (max-width: 816px) {
-    #logo > #dots {
-      //#dots {
-        margin: 0 15px;
+    #dots {
+      margin: 0 15px;
 
-        .dot {
-          min-width: 1px;
-          min-height: 1px;
-          width: 0.78%;
-          height: 2.2%;
-        }
-
-        //padding: 0 15px;
-        //width: 100%;
-        //border-color: green;
-      //}
+      .dot {
+        min-width: 1px;
+        min-height: 1px;
+        width: 0.78%;
+        height: 2.2%;
+      }
     }
   }
 
