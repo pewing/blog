@@ -13,7 +13,7 @@
     .col-xs-12
       p.text-center
         | Freelance software engineer whose background is mainly
-          Rails, C++, and Python. There's more about my work&nbsp
+          Rails, C++, and Python. More about my work&nbsp
         = link_to 'here', work_path
         | .
 
@@ -34,7 +34,7 @@
       p.text-center
         strong
           | What's up with the logo?&nbsp
-        | It's a tracing every city I've lived in, starting in NYC and ending in SF.
+        | It's tracing every place I've lived, starting in NYC and ending in SF.
     /.col-xs-12
     /  = image_tag 'logo_hole.png', class: 'img-responsive center-block', id: 'about-logo-image'
 
@@ -58,15 +58,18 @@
           #dot-str.dot
         = link_to about_path(anchor: 'about-me') do
           #dot-gen.dot
-    .row#logo-location
+    /.row#logo-location
+    .col-xs-12#logo-location
       h3.text-center#hover-location
 
   .row#about-anything-else.text-center
-    h4 Want to know anything else?
+    h3 Want to know anything else?
     p
       | Feel free to&nbsp
       = link_to 'contact me', contact_path
-      | , or check me out on Github, LinkedIn, or AngelList below
+      | , or check me out on Github, LinkedIn, or AngelList below.
+      br
+      br
       .glyphicon.glyphicon-arrow-down
 
 

@@ -73,6 +73,7 @@ $blue8: #171F24;
     background-color: $blue8;
     width: 100%;
     height: 100%;
+    padding-bottom: 50px;
 
     #image {
       height: 100%;
@@ -132,17 +133,19 @@ $blue8: #171F24;
         margin: 0 auto;
       }
     }
-  }
 
-  #logo-location {
-    height: 50px;
-    color: $blue2;
-    padding-bottom: 0;
-    padding-top: 0;
+    #logo-location {
+      position: static;
+      height: 50px;
+      color: $blue2;
+      margin-top: 0;
+      margin-bottom: 0;
+      //padding-bottom: 0;
+      //padding-top: 0;
 
-    #hover-location {
-      display: none;
-
+      #hover-location {
+        display: none;
+      }
     }
   }
 
