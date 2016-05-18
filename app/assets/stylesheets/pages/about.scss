@@ -41,15 +41,6 @@ $blue8: #171F24;
     padding-bottom: 80px;
   }
 
-  #about-work {
-    background-color: $blue1;
-    color: $blue6;
-
-    a {
-      color: $blue5;
-    }
-  }
-
   #about-school {
     padding: 0;
     height: 256px;
@@ -70,12 +61,24 @@ $blue8: #171F24;
         //padding: auto;
       }
     }
+  }
 
+  #about-work {
+    background-color: $blue1;
+    color: $blue6;
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    a {
+      color: $blue5;
+    }
   }
 
   #about-interests {
     background-color: $blue5;
     color: $blue6;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
 
   #about-logo {
