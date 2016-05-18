@@ -1,5 +1,6 @@
 $standard-font-size: 20px;
 $blue1: #DFE5F7;
+$blue4: #608093;
 $blue5: #517285;
 $blue6: #37454F;
 $blue8: #171F24;
@@ -7,7 +8,7 @@ $blue8: #171F24;
 #contact {
   font-family: 'Droid Sans', sans-serif;
   font-size: $standard-font-size;
-  color: $blue1;
+  color: $blue4;
 
   #contact-block {
     padding-top: 40px;
@@ -25,12 +26,13 @@ $blue8: #171F24;
         left: 50%;
         list-style: none;
         margin: auto;
+        font-style: italic;
         //padding-left: 40%;
       }
     }
 
     a {
-      color: $blue1;
+      color: $blue4;
       font-weight: bold;
 
       &:link {
