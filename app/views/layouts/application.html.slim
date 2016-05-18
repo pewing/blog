@@ -15,6 +15,6 @@ html lang="en"
         = render 'layouts/navbar'
       /== yield(:after_header)
       == yield
-
-  footer
-    = render 'layouts/footer'
+  - unless @is_contact
+    footer
+      = render 'layouts/footer'
