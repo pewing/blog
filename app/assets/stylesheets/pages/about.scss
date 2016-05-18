@@ -27,62 +27,66 @@ $blue8: #171F24;
   #logo {
     background-color: $blue8;
     width: 100%;
-    height: 100%;
+    //height: 100%;
+    height: 272px;
 
-
-    #dots {
-      max-width: 766px;
-      max-height: 272px;
+    #image {
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 0;
 
-      .dot {
-        width: 6px;
-        height: 6px;
-        border-radius: 3px;
+      #dots {
+        max-width: 766px;
+        max-height: 272px;
+        height: 100%;
         position: absolute;
-        background-color: $blue1;
-        &:hover {
-          background-color: blue;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+
+        .dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 3px;
+          position: absolute;
+          background-color: $blue1;
+          &:hover {
+            background-color: blue;
+          }
+
         }
+        #dot-sf {
+          top: 76.2%;
+          left: 7.9%;
+        }
+        #dot-ott {
+          top: 59.2%;
+          left: 35.9%;
+        }
+        #dot-ham {
+          top: 63.8%;
+          left: 36.2%;
+        }
+        #dot-nyc {
+          top: 70%;
+          left: 36.9%;
+        }
+        #dot-sthlm {
+          top: 20%;
+          left: 92.3%;
+        }
+        #dot-str {
+          top: 51.5%;
+          left: 86.1%;
+        }
+        #dot-gen {
+          top: 57.5%;
+          left: 85.3%;
+        }
+      }
 
+      img {
+        margin: 0 auto;
       }
-      #dot-sf {
-        top: 76.2%;
-        left: 7.9%;
-      }
-      #dot-ott {
-        top: 59.2%;
-        left: 35.9%;
-      }
-      #dot-ham {
-        top: 63.8%;
-        left: 36.2%;
-      }
-      #dot-nyc {
-        top: 70%;
-        left: 36.9%;
-      }
-      #dot-sthlm {
-        top: 20%;
-        left: 92.3%;
-      }
-      #dot-str {
-        top: 51.5%;
-        left: 86.1%;
-      }
-      #dot-gen {
-        top: 57.5%;
-        left: 85.3%;
-      }
-    }
-
-    img {
-      margin: 0 auto;
     }
   }
 
