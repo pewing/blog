@@ -6,16 +6,8 @@ $('.pages.about').ready(function() {
         $location_hover.fadeOut(600);
     };
 
-    $('#dot-sf').hover(function() {
-        $location_hover.text('About Me').fadeIn(600);
-    }, reset_location);
-
-    $("#image").affix({
-        offset: { top: 0 }
-    });
-
-
-
-
-
+    //$('#dot-sf').hover(function() {
+    //    $location_hover.text('About Me').fadeIn(600);
+    //}, reset_location);
+    //
 });

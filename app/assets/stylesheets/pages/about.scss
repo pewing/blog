@@ -14,21 +14,65 @@ $blue8: #171F24;
 #about {
   font-family: 'Droid Sans', sans-serif;
 
-
   background-color: $blue8;
+  color: $blue2;
 
   font-size: $standard-font-size;
 
+  margin-bottom: 40px;
+
   .row {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  a {
+    font-weight: bold;
+
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #ea8602;
+    }
+  }
+
+  #about-me {
+    background-color: $blue8;
+    color: $blue1;
+
+    #about-me-text {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  #about-work {
+    background-color: $blue1;
+    color: $blue8;
+
+    a {
+      color: $blue5;
+    }
+  }
+
+  #about-school {
+
+  }
+
+  #about-interests {
+    background-color: $blue1;
+    color: $blue8;
+  }
+
+  #about-logo {
+    padding-bottom: 0;
   }
 
   #logo {
     background-color: $blue8;
     width: 100%;
-    //height: 100%;
-    height: 272px;
+    height: 100%;
 
     #image {
       height: 100%;
@@ -91,35 +135,22 @@ $blue8: #171F24;
   }
 
   #logo-location {
-    height: 100px;
+    height: 50px;
     color: $blue2;
+    padding-bottom: 0;
+    padding-top: 0;
+
     #hover-location {
       display: none;
+
     }
   }
 
-  a {
-    color: $blue1;
-    font-weight: bold;
-
-    &:link {
-      text-decoration: none;
-    }
-    &:hover {
-      color: #ea8602;
-    }
-  }
-
-  #about-me {
-    //background-color: $blue8;
-    color: $blue2;
-    //color: #DFE5F7;
-
-  }
 
   #about-anything-else {
     color: $blue8;
     background-color: $blue1;
+    //padding-bottom: 0;
 
     a {
       color: $blue5;
@@ -132,21 +163,15 @@ $blue8: #171F24;
   }
 
   @media (max-width: 816px) {
-    #logo > #dots {
-      //#dots {
-        margin: 0 15px;
+    #dots {
+      margin: 0 15px;
 
-        .dot {
-          min-width: 1px;
-          min-height: 1px;
-          width: 0.78%;
-          height: 2.2%;
-        }
-
-        //padding: 0 15px;
-        //width: 100%;
-        //border-color: green;
-      //}
+      .dot {
+        min-width: 1px;
+        min-height: 1px;
+        width: 0.78%;
+        height: 2.2%;
+      }
     }
   }
 

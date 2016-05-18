@@ -1,11 +1,48 @@
 = title 'About Me'
 .container-fluid#about
+  .row.padded#about-me
+    .row#about-me-text
+      .col-xs-12
+        p.text-center#about-me-text
+          | Swedish, American,
+    .row#about-me-image
+      .col-xs-12
+        = image_tag 'profile.jpg', class: 'img-responsive center-block img-rounded'
+
+  .row.padded#about-work
+    .col-xs-12
+      p.text-center
+        | Freelance software engineer whose background is mainly
+          Rails, C++, and Python. There's more about my work&nbsp
+        = link_to 'here', work_path
+        | .
+
+  .row#about-school
+    .col-xs-12
+      p.text-center
+        | I went to Hamilton College, a small liberal arts college in upstate New York. I graduated in 2015 with
+          degrees in Computer Science and Economics. I was also a varsity rower for all four years.
+
+  .row#about-interests
+    .col-xs-12
+      p.text-center
+        | I'm an avid traveller, reader, and beer-drinker.
+
+
+  .row#about-logo
+    .col-xs-12
+      p.text-center
+        strong
+          | What's up with the logo?&nbsp
+        | It's a tracing every city I've lived in, starting in NYC and ending in SF.
+    /.col-xs-12
+    /  = image_tag 'logo_hole.png', class: 'img-responsive center-block', id: 'about-logo-image'
+
   .row-fluid.clearfix#logo
     /.vertical-center
-    .col-xs-12#image.affix-top
+    .col-xs-12#image
       /#logo
-      /= image_tag 'logo_hole.png', class: 'img-responsive'
-      #sub-image
+      = image_tag 'logo_hole.png', class: 'img-responsive'
       .container-fluid#dots
         = link_to about_path(anchor: 'about-me') do
           #dot-sf.dot
@@ -21,40 +58,8 @@
           #dot-str.dot
         = link_to about_path(anchor: 'about-me') do
           #dot-gen.dot
-  .row#logo-location
-    h3.text-center#hover-location
-      /| About Me
-    br
-    br
-
-
-
-
-  .row#about-me
-    .row
-      .col-xs-12
-        p.text-center#about-me-text
-          | I'm a San Francisco-based software engineer whose background is mainly
-            Rails, C++, and Python.
-    .row
-      .col-xs-12
-        = image_tag 'profile.jpg', class: 'img-responsive center-block img-rounded'
-
-  .row#about-work
-
-
-  .row#about-school
-    .col-xs-8
-      p
-        | I went to Hamilton College, a small liberal arts college in upstate New York. I graduated in 2015 degrees in
-          Computer Science and Economics. I was also a varsity rower for all four years.
-    .col-xs-4
-      p
-        |
-
-  .row#about-interests
-
-  .row#about-logo
+    .row#logo-location
+      h3.text-center#hover-location
 
   .row#about-anything-else.text-center
     h4 Want to know anything else?
@@ -67,4 +72,5 @@
 
 
 
-  .row#personal
+
+  /.row#personal
