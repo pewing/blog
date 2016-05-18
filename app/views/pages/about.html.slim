@@ -3,78 +3,45 @@
   .row-fluid.clearfix#logo
     /.vertical-center
     .col-xs-12#image.affix-top
-      #logo
-        = image_tag 'logo_hole.png', class: 'img-responsive'
-        #sub-image
-        .container-fluid#dots
-          = link_to about_path(anchor: 'about-me') do
-            #dot-sf.dot
-          = link_to about_path(anchor: 'about-me') do
-            #dot-ott.dot
-          = link_to about_path(anchor: 'about-me') do
-            #dot-ham.dot
-          = link_to about_path(anchor: 'about-me') do
-            #dot-nyc.dot
-          = link_to about_path(anchor: 'about-me') do
-            #dot-sthlm.dot
-          = link_to about_path(anchor: 'about-me') do
-            #dot-str.dot
-          = link_to about_path(anchor: 'about-me') do
-            #dot-gen.dot
+      /#logo
+      = image_tag 'logo_hole.png', class: 'img-responsive'
+      #sub-image
+      .container-fluid#dots
+        = link_to about_path(anchor: 'about-me') do
+          #dot-sf.dot
+        = link_to about_path(anchor: 'about-me') do
+          #dot-ott.dot
+        = link_to about_path(anchor: 'about-me') do
+          #dot-ham.dot
+        = link_to about_path(anchor: 'about-me') do
+          #dot-nyc.dot
+        = link_to about_path(anchor: 'about-me') do
+          #dot-sthlm.dot
+        = link_to about_path(anchor: 'about-me') do
+          #dot-str.dot
+        = link_to about_path(anchor: 'about-me') do
+          #dot-gen.dot
   .row#logo-location
     h3.text-center#hover-location
       /| About Me
     br
     br
 
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
+
 
 
   .row#about-me
-    .col-xs-8
-      p#about-me-text
-        | I'm a San Francisco-based software engineer whose background is mainly
-          Rails, C++, and Python. I graduated from Hamilton College in 2015, and
-          moved to the Bay Area shortly afterwards.
-    .col-xs-4
-      = image_tag 'profile.jpg', class: 'img-responsive'
+    .row
+      .col-xs-12
+        p.text-center#about-me-text
+          | I'm a San Francisco-based software engineer whose background is mainly
+            Rails, C++, and Python.
+    .row
+      .col-xs-12
+        = image_tag 'profile.jpg', class: 'img-responsive center-block img-rounded'
 
   .row#about-work
+
 
   .row#about-school
     .col-xs-8
@@ -96,68 +63,8 @@
       = link_to 'contact me', contact_path
       | , or check me out on Github, LinkedIn, or AngelList below
       .glyphicon.glyphicon-arrow-down
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
-  br
 
 
-
-
-  /.row#work
-  /  .col-xs-12#work-basics
-  /    h3 A little about me
-  /    p
-  /      | I'm a San Francisco-based software engineer whose background is mainly
-  /        Rails, C++, and Python. I graduated from Hamilton College in 2015, and
-  /        moved to the Bay shortly afterwards. I made this website to ... ?
-  /
-  /    #work-past
-  /      h4 What I've been doing
-  /      p
-  /        | The latest company I worked at was High Fidelity, a company that's building
-  /          an open-source VR platform.
-  /          They're creating some very exciting stuff, and I encourage you to check them
-  /          out&nbsp
-  /        = link_to 'here', 'https://www.highfidelity.io/'
-  /        | .
-  /
-  /      p
-  /        |
-  /
-  /  #personal
 
 
   .row#personal

@@ -12,12 +12,17 @@ $blue8: #171F24;
 
 
 #about {
-  //margin: auto;
-  //width: 600px;
+  font-family: 'Droid Sans', sans-serif;
+
 
   background-color: $blue8;
 
   font-size: $standard-font-size;
+
+  .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
   #logo {
     background-color: $blue8;
@@ -113,7 +118,7 @@ $blue8: #171F24;
     background-color: $blue1;
 
     a {
-      //color: #F7F7F7;
+      color: $blue5;
       font-weight: bold;
 
       &:hover {
