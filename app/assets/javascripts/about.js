@@ -14,7 +14,7 @@ $('.pages.about').ready(function() {
         $location_hover.text('Ottawa').fadeIn(600);
     }, reset_location);
     $('#dot-ham').hover(function() {
-        $location_hover.text('Hamilton').fadeIn(600);
+        $location_hover.text('Hamilton College').fadeIn(600);
     }, reset_location);
     $('#dot-nyc').hover(function() {
         $location_hover.text('New York City').fadeIn(600);
