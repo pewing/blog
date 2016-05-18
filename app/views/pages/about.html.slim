@@ -35,13 +35,9 @@
         strong
           | What's up with the logo?&nbsp
         | It's tracing every place I've lived, starting in NYC and ending in SF.
-    /.col-xs-12
-    /  = image_tag 'logo_hole.png', class: 'img-responsive center-block', id: 'about-logo-image'
 
   .row-fluid.clearfix#logo
-    /.vertical-center
     .col-xs-12#image
-      /#logo
       = image_tag 'logo_hole.png', class: 'img-responsive'
       .container-fluid#dots
         = link_to about_path(anchor: 'about-me') do
@@ -58,7 +54,6 @@
           #dot-str.dot
         = link_to about_path(anchor: 'about-me') do
           #dot-gen.dot
-    /.row#logo-location
     .col-xs-12#logo-location
       h3.text-center#hover-location
 
