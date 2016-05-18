@@ -1,3 +1,4 @@
+$small-font-size: 10px;
 $standard-font-size: 20px;
 $blue1: #DFE5F7;
 $blue2: #8295A0;
@@ -13,11 +14,10 @@ $blue8: #171F24;
 
 #about {
   font-family: 'Droid Sans', sans-serif;
+  font-size: $standard-font-size;
 
   background-color: $blue8;
   color: $blue2;
-
-  font-size: $standard-font-size;
 
   margin-bottom: 40px;
 
@@ -38,18 +38,12 @@ $blue8: #171F24;
   }
 
   #about-me {
-    background-color: $blue8;
-    color: $blue1;
-
-    #about-me-text {
-      padding-bottom: 0;
-      padding-top: 0;
-    }
+    padding: 80px 0;
   }
 
   #about-work {
     background-color: $blue1;
-    color: $blue8;
+    color: $blue6;
 
     a {
       color: $blue5;
@@ -57,12 +51,30 @@ $blue8: #171F24;
   }
 
   #about-school {
+    padding: 0;
+    height: 256px;
+    background-image: image-url('facebook_cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    #about-school-text {
+      height: 100%;
+      padding: 100px 0;
+      color: $blue1;
+      background-color: rgba(81,114,133,0.8);
+      //padding: auto;
+
+      p {
+        //padding: auto;
+      }
+    }
 
   }
 
   #about-interests {
-    background-color: $blue1;
-    color: $blue8;
+    background-color: $blue5;
+    color: $blue6;
   }
 
   #about-logo {
@@ -89,13 +101,13 @@ $blue8: #171F24;
         padding: 0;
 
         .dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 3px;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
           position: absolute;
           background-color: $blue1;
           &:hover {
-            background-color: blue;
+            background-color: $blue5;
           }
 
         }
@@ -104,28 +116,28 @@ $blue8: #171F24;
           left: 7.9%;
         }
         #dot-ott {
-          top: 59.2%;
-          left: 35.9%;
+          top: 58.7%;
+          left: 35.8%;
         }
         #dot-ham {
-          top: 63.8%;
-          left: 36.2%;
+          top: 63.6%;
+          left: 36%;
         }
         #dot-nyc {
-          top: 70%;
+          top: 69.6%;
           left: 36.9%;
         }
         #dot-sthlm {
-          top: 20%;
-          left: 92.3%;
+          top: 19.6%;
+          left: 92.2%;
         }
         #dot-str {
-          top: 51.5%;
-          left: 86.1%;
+          top: 51.3%;
+          left: 85.9%;
         }
         #dot-gen {
-          top: 57.5%;
-          left: 85.3%;
+          top: 56.9%;
+          left: 85%;
         }
       }
 
@@ -134,14 +146,17 @@ $blue8: #171F24;
       }
     }
 
+    #logo-projection {
+      font-size: $small-font-size;
+      font-style: italic;
+    }
+
     #logo-location {
       position: static;
       height: 50px;
       color: $blue2;
       margin-top: 0;
       margin-bottom: 0;
-      //padding-bottom: 0;
-      //padding-top: 0;
 
       #hover-location {
         display: none;
@@ -151,9 +166,8 @@ $blue8: #171F24;
 
 
   #about-anything-else {
-    color: $blue8;
+    color: $blue6;
     background-color: $blue1;
-    //padding-bottom: 0;
 
     a {
       color: $blue5;
