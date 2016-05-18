@@ -1,1 +1,28 @@
 = title 'Contact'
+
+.container-fluid#contact
+  .vertical-center
+    .col-xs-2
+    .col-xs-8#contact-block
+      p.text-center
+        | Do you have any questions or comments? Email me at&nbsp
+        = mail_to 'philip@philipewing.com', 'philip@philipewing.com'
+        | .
+      p.text-center
+        | Or you can reach me on one of these websites:
+
+      #website-list
+        ul
+          li
+            = image_tag 'github_logo.png'
+            | &nbsp-&nbsp
+            = link_to 'pewing', 'https://github.com/pewing'
+          li
+            = image_tag 'linkedin_logo.png'
+            | &nbsp-&nbsp
+            = link_to 'philipewing', 'https://www.linkedin.com/in/philipewing'
+          li
+            = image_tag 'angel_logo.png'
+            | &nbsp-&nbsp
+            = link_to 'philip-ewing-1', 'https://angel.co/philip-ewing-1'
+    .col-xs-2

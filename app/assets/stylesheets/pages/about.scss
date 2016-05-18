@@ -5,7 +5,6 @@ $blue2: #8295A0;
 $blue3: #738897;
 $blue4: #608093;
 $blue5: #517285;
-//$blue6: #
 $blue6: #37454F;
 $blue7: #26333A;
 $blue8: #171F24;
@@ -38,7 +37,8 @@ $blue8: #171F24;
   }
 
   #about-me {
-    padding: 80px 0;
+    padding-top: 180px;
+    padding-bottom: 80px;
   }
 
   #about-work {
@@ -60,7 +60,8 @@ $blue8: #171F24;
 
     #about-school-text {
       height: 100%;
-      padding: 100px 0;
+      padding-top: 100px;
+      padding-bottom: 100px;
       color: $blue1;
       background-color: rgba(81,114,133,0.8);
       //padding: auto;
