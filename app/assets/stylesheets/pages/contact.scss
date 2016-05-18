@@ -6,20 +6,35 @@ $blue1: #DFE5F7;
   font-size: $standard-font-size;
   color: $blue1;
 
-  ul {
-    list-style: none;
-  }
+  #contact-block {
+    width: 66%;
 
-  a {
-    color: $blue1;
-    font-weight: bold;
+    #website-list {
+      float: right;
+      position: relative;
+      left: -50%;
+      text-align: left;
 
-    &:link {
-      text-decoration: none;
+      ul {
+        //display: block;
+        position: relative;
+        left: 50%;
+        list-style: none;
+        margin: auto;
+        //padding-left: 40%;
+      }
     }
-    &:hover {
-      color: #ea8602;
+
+    a {
+      color: $blue1;
+      font-weight: bold;
+
+      &:link {
+        text-decoration: none;
+      }
+      &:hover {
+        color: #ea8602;
+      }
     }
   }
-
 }
