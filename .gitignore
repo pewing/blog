@@ -19,4 +19,4 @@
 /config/environments/test.rb
 /config/environments/development.rb
 
-.idea/*
+.idea/workspace.xml
