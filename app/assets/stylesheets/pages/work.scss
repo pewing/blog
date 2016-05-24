@@ -1,5 +1,18 @@
+$blue1: #DFE5F7;
+
 #work {
   min-height: 100;
-  width: 100%;
-  background-color: white;
+  //width: 100%;
+  //width:
+  //background-color: white;
+
+  .date {
+    text-align: right;
+  }
+
+  .title {
+    font-size: large;
+    border-bottom: 2px solid $blue1;
+  }
+
 }
