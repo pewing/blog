@@ -8,22 +8,22 @@ nav#navbar.navbar.navbar-default
       /li.navbar-box.navbar-page#blog-header
       /  = link_to 'Blog', root_path
         /blog_path
-      li.navbar-box.navbar-page#about-header
+      li.navbar-box.navbar-page
         /a.btn.btn-mini href="javascript:;"
         /  | About
-        = link_to 'about', about_path
+        = link_to 'about', about_path, id: 'about-header'
       /li.navbar-box.navbar-page
       /  | /
-      li.navbar-box.navbar-page#work-header
-        a.btn.btn-mini href="javascript:;"
+      li.navbar-box.navbar-page
+        a.btn.btn-mini#work-header href="javascript:;"
           | work
-        /= link_to 'work', work_path
+        /= link_to 'work', work_path, id: 'work-header'
       /li.navbar-box.navbar-page
       /  | /
-      li.navbar-box.navbar-page#contact-header
+      li.navbar-box.navbar-page
         /a.btn.btn-mini href="javascript:;"
         /  | Contact
-        = link_to 'contact', contact_path
+        = link_to 'contact', contact_path, id: 'contact-header'
         /"#contact-modal", :class=>"btn", "data-toggle"=>"modal"
         /button#contact-button.btn.btn-success data-target="#contact-modal" data-toggle="modal"
         /contact_path
