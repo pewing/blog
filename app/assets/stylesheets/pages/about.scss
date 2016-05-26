@@ -109,10 +109,7 @@ $blue8: #171F24;
           height: 8px;
           border-radius: 4px;
           position: absolute;
-          background-color: $blue1;
-          &:hover {
-            background-color: $blue5;
-          }
+          background-color: transparent;
 
         }
         #dot-sf {

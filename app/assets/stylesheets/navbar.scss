@@ -41,6 +41,13 @@
   .navbar-nav > li {
     float: left;
   }
+
+  @media (max-width: 768px) {
+    #navbar-pages {
+      margin-right: 0;
+    }
+  }
+
 }
 
 
