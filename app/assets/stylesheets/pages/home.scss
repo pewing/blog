@@ -28,6 +28,55 @@
         }
 
       }
+
+      #dots {
+        max-width: 766px;
+        max-height: 272px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+
+        .dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          position: absolute;
+          background-color: transparent;
+        //  TODO: Fix width when < 768px
+        }
+        #dot-sf {
+          top: 76.2%;
+          left: 7.9%;
+        }
+        #dot-ott {
+          top: 58.7%;
+          left: 35.8%;
+        }
+        #dot-ham {
+          top: 63.6%;
+          left: 36%;
+        }
+        #dot-nyc {
+          top: 69.6%;
+          left: 36.9%;
+        }
+        #dot-sthlm {
+          top: 19.6%;
+          left: 92.2%;
+        }
+        #dot-str {
+          top: 51.3%;
+          left: 85.9%;
+        }
+        #dot-gen {
+          top: 56.9%;
+          left: 85%;
+        }
+      }
+
     }
   }
 }

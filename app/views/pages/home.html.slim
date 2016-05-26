@@ -13,5 +13,24 @@
               = image_tag 'work.png', class: 'img-responsive'
             #contact-hover.hidden-hover
               = image_tag 'contact.png', class: 'img-responsive'
-
-      /#TODO: Double size of picture of code for 'work.png', then halve size
+            #stockholm-hover.hidden-hover
+              = image_tag 'stockholm.jpg', class: 'img-responsive'
+            #strasbourg-hover.hidden-hover
+              = image_tag 'strasbourg.jpg', class: 'img-responsive'
+            #geneva-hover.hidden-hover
+              = image_tag 'geneva.jpg', class: 'img-responsive'
+          .container-fluid#dots
+            = link_to about_path(anchor: 'about-me') do
+              #dot-sf.dot
+            = link_to about_path(anchor: 'about-me') do
+              #dot-ott.dot
+            = link_to about_path(anchor: 'about-me') do
+              #dot-ham.dot
+            = link_to about_path(anchor: 'about-me') do
+              #dot-nyc.dot
+            = link_to about_path(anchor: 'about-me') do
+              #dot-sthlm.dot
+            = link_to about_path(anchor: 'about-me') do
+              #dot-str.dot
+            = link_to about_path(anchor: 'about-me') do
+              #dot-gen.dot

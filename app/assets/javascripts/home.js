@@ -5,6 +5,9 @@ $('.pages.home').ready(function() {
     var $work_hover = $('#work-hover');
     var $contact_hover = $('#contact-hover');
     var $nothing_alert = $("#nothing-alert");
+    var $stockholm_hover = $('#stockholm-hover');
+    var $strasbourg_hover = $('#strasbourg-hover');
+    var $geneva_hover = $('#geneva-hover');
     //var $logo_image = $('#logo-image');
 
     $nothing_alert.hide();
@@ -44,11 +47,29 @@ $('.pages.home').ready(function() {
     }, function () {
         reset_background($work_hover)
     });
-    //
+
     $('#contact-header').hover(function () {
         $contact_hover.css('display', 'block');
     }, function () {
         reset_background($contact_hover);
+    });
+
+    $('#dot-sthlm').hover(function () {
+        $stockholm_hover.css('display', 'block');
+    }, function () {
+        reset_background($stockholm_hover);
+    });
+
+    $('#dot-str').hover(function () {
+        $strasbourg_hover.css('display', 'block');
+    }, function () {
+        reset_background($strasbourg_hover);
+    });
+
+    $('#dot-gen').hover(function () {
+        $geneva_hover.css('display', 'block');
+    }, function () {
+        reset_background($geneva_hover);
     });
 
     $("#work-header").click(function showAlert() {
