@@ -14,23 +14,45 @@ $('.pages.home').ready(function() {
     var $sf_hover = $('#sf-hover');
     var $navbar_location = $('#navbar-location');
     var $navbar_pages = $('#navbar-pages');
+    var index = -1;
+    var string = '';
+
+
+    var interval = null;
 
     $nothing_alert.hide();
 
     function reset_background(img) {
+        clearInterval(interval);
+        $navbar_location.text('');
+        string = '';
+        index = -1;
         img.css('display', 'none');
-        $navbar_location.fadeOut(150, function () {
-            $navbar_pages.css('display', 'block');
-        });
+        $navbar_location.fadeOut(150);
+        $navbar_pages.fadeIn(150);
+    }
 
+    function rolling_text(str) {
+        console.log(str);
+        console.log(index);
+        if (index >= 0) {
+            $navbar_location.text(string[index] + $navbar_location.text());
+            index--;
+        }
+        else {
+            index=-1;
+            clearInterval(interval);
+        }
     }
 
     function add_location_text(str) {
-        $navbar_pages.fadeOut(500, function () {
-            $navbar_location.css('display', 'block');
+        $navbar_location.fadeIn(150);
+        $navbar_location.text('');
+        $navbar_pages.fadeOut(150, function () {
+            string = str;
+            index = str.length - 1;
+            interval = setInterval(rolling_text, 50);
         });
-        $navbar_location.text(str);
-
     }
 
     $('#about-header').hover(function () {
