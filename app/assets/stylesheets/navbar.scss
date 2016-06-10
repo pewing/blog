@@ -11,6 +11,17 @@
     bottom: 0;
   }
 
+  #navbar-location {
+    display: none;
+    color: #DFE5F7;
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 5px;
+  }
+
   .navbar-logo {
     float: left;
   }
@@ -23,6 +34,7 @@
     padding: 0;
     color: #DFE5F7;
     font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 2px;
 
     &:link {
       text-decoration: none;
