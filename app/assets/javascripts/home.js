@@ -32,15 +32,12 @@ $('.pages.home').ready(function() {
         $navbar_pages.fadeIn(150);
     }
 
-    function rolling_text(str) {
-        console.log(str);
-        console.log(index);
+    function rolling_text() {
         if (index >= 0) {
             $navbar_location.text(string[index] + $navbar_location.text());
             index--;
         }
         else {
-            index=-1;
             clearInterval(interval);
         }
     }
@@ -51,7 +48,7 @@ $('.pages.home').ready(function() {
         $navbar_pages.fadeOut(150, function () {
             string = str;
             index = str.length - 1;
-            interval = setInterval(rolling_text, 50);
+            interval = setInterval(rolling_text, 25);
         });
     }
 
