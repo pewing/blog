@@ -1,6 +1,5 @@
 $('.pages.home').ready(function() {
 
-
     var $profile_hover = $('#profile-hover');
     var $work_hover = $('#work-hover');
     var $contact_hover = $('#contact-hover');
@@ -15,7 +14,7 @@ $('.pages.home').ready(function() {
     var $navbar_location = $('#navbar-location');
     var $navbar_pages = $('#navbar-pages');
     var index = -1;
-    var string = '';
+    var location_string = '';
 
 
     var interval = null;
@@ -25,7 +24,7 @@ $('.pages.home').ready(function() {
     function reset_background(img) {
         clearInterval(interval);
         $navbar_location.text('');
-        string = '';
+        location_string = '';
         index = -1;
         img.css('display', 'none');
         $navbar_location.fadeOut(150);
@@ -34,7 +33,7 @@ $('.pages.home').ready(function() {
 
     function rolling_text() {
         if (index >= 0) {
-            $navbar_location.text(string[index] + $navbar_location.text());
+            $navbar_location.text(location_string[index] + $navbar_location.text());
             index--;
         }
         else {
@@ -44,9 +43,10 @@ $('.pages.home').ready(function() {
 
     function add_location_text(str) {
         $navbar_location.fadeIn(150);
-        $navbar_location.text('');
         $navbar_pages.fadeOut(150, function () {
-            string = str;
+            clearInterval(interval);
+            $navbar_location.text('');
+            location_string = str;
             index = str.length - 1;
             interval = setInterval(rolling_text, 25);
         });
