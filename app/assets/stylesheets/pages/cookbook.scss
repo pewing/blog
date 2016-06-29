@@ -1,0 +1,29 @@
+@import "_formats";
+
+#cookbook {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: $standard-font-size;
+
+  #recipes {
+    color: $blue8;
+
+    .breadcrumb {
+      font-size: $small-font-size;
+      background-color: transparent;
+    }
+
+    //#recipes-index {
+    //  display: table;
+    //  width: 100%;
+    //
+    //  li {
+    //    display: inline-block;
+    //  }
+    //
+    //  a {
+    //    display: block;
+    //    text-align: center;
+    //  }
+    //}
+  }
+}

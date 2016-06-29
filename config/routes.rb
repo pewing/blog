@@ -8,8 +8,14 @@ Rails.application.routes.draw do
     get 'about'
     get 'work'
     get 'contact'
-    get 'cookbook'
+    # get 'cookbook'
   end
+
+  resources :cookbook, only: :index
+
+  # scope :cookbook do
+  #   resources :recipes
+  # end
 
 
 end
