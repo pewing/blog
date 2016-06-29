@@ -118,13 +118,6 @@ $('.pages.home').ready(function() {
     }, function () {
         reset_background($sf_hover);
     });
-
-    $("#work-header").click(function showAlert() {
-        $nothing_alert.show();
-        $nothing_alert.fadeTo(2000, 500).slideUp(500, function () {
-            $(this).hide();
-        });
-    });
 });
 
 

@@ -1,7 +1,8 @@
-$blue1: #DFE5F7;
+@import "_formats";
 
 #work {
   min-height: 100;
+  color: $blue1;
   //width: 100%;
   //width:
   //background-color: white;
@@ -12,7 +13,7 @@ $blue1: #DFE5F7;
 
   .title {
     font-size: large;
-    border-bottom: 2px solid $blue1;
+    border-bottom: 2px solid $blue2;
   }
 
 }
