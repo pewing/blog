@@ -1,9 +1,93 @@
+= javascript_include_tag "//www.google.com/jsapi", "chartkick"
+= title "Work"
+
 .container#work
+  /.row
+  /  .col-xs-4
+  /    p.text-center
+  /      | Python
+  /  .col-xs-4
+  /    p.text-center.lined
+  /      | Ruby
+  /  .col-xs-4
+  /    p.text-center
+  /      | C++
+
+
   .row#work-intro
     .col-xs-12
-      h3
-        |
+      p.text-justify
+        | I have been freelancing for the past&nbsp
+        = (Date.today.month - Date.parse("2016-03-15").month)
+        |  months. My main client is a well-drilling company out in Connecticut. I am taking care of both
+          front and backend, and design. Although I have enjoyed the independence and learning experience
+          of working for myself, I look forward to joining a company again and being able to work with fellow
+          developers.
+  br
+  br
+  .row
+    p
+      | Before that ...
 
+  br
+  br
+  .row
+    .col-xs-12
+      p
+        | I learned Ruby on Rails on the job while working at High Fidelity, a VR platform, when I was tasked to
+          build out their domain model to allow renewals of current users. The renewal rate was above 90% for the first
+          few weeks.
+        br
+        br
+        | Improving the website wasn't my only job. I gained significant experience with Python building out their
+          Continuous Integration platform, and used Ansible heavily for server provisioning. As part of the CI work, I
+          learned to use the headless browser PhantomJS to automate backups of important data spread over multiple
+          services. I became intimately acquainted with many AWS services, including EC2, BeanStalk, and RDS.
+        br
+        br
+        | High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
+        = link_to 'here', 'https://highfidelity.io'
+        | .
+/span
+/  strong Ruby
+/| ,&nbsp
+/span
+/  strong Python
+/| , and&nbsp
+/span
+/  strong C++
+/| , although I'm familiar with a wide variety of them.
+
+  /.row
+    .col-xs-12#work-timeline
+      #work-timeline-container
+      /= timeline [ \
+      /  [ "Freelancer", "2016-03", Date.today ],\
+      /  [ "Freelancer2", "2015-10", Date.today ] \
+      /], { library: { style: 'box', forceIFrame: true, \
+      /  backgroundColor: '#171F24',  timeline: { \
+      /      groupByRowLabel: true, \
+      /      showRowLabels: false, \
+      /      showBarLabels: false \
+      /  } \
+      /}}
+
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
 
   .row#education
     .col-xs-12.title#education-title
