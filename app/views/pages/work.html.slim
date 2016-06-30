@@ -1,5 +1,176 @@
+= javascript_include_tag "//www.google.com/jsapi", "chartkick"
+= title "Work"
+
 .container#work
-  | THIS IS WORK
+  /.row
+  /  .col-xs-4
+  /    p.text-center
+  /      | Python
+  /  .col-xs-4
+  /    p.text-center.lined
+  /      | Ruby
+  /  .col-xs-4
+  /    p.text-center
+  /      | C++
+
+
+  .row#work-intro
+    .col-xs-12
+      p.text-justify
+        | I have been freelancing for the past&nbsp
+        = (Date.today.month - Date.parse("2016-03-15").month)
+        |  months. My main client is a well-drilling company out in Connecticut. I am taking care of both
+          front and backend, and design. Although I have enjoyed the independence and learning experience
+          of working for myself, I look forward to joining a company again and being able to work with fellow
+          developers.
+  br
+  br
+  .row
+    p
+      | Before that ...
+
+  br
+  br
+  .row
+    .col-xs-12
+      p
+        | I learned Ruby on Rails on the job while working at High Fidelity, a VR platform, when I was tasked to
+          build out their domain model to allow renewals of current users. The renewal rate was above 90% for the first
+          few weeks.
+        br
+        br
+        | Improving the website wasn't my only job. I gained significant experience with Python building out their
+          Continuous Integration platform, and used Ansible heavily for server provisioning. As part of the CI work, I
+          learned to use the headless browser PhantomJS to automate backups of important data spread over multiple
+          services. I became intimately acquainted with many AWS services, including EC2, BeanStalk, and RDS.
+        br
+        br
+        | High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
+        = link_to 'here', 'https://highfidelity.io'
+        | .
+/span
+/  strong Ruby
+/| ,&nbsp
+/span
+/  strong Python
+/| , and&nbsp
+/span
+/  strong C++
+/| , although I'm familiar with a wide variety of them.
+
+  /.row
+    .col-xs-12#work-timeline
+      #work-timeline-container
+      /= timeline [ \
+      /  [ "Freelancer", "2016-03", Date.today ],\
+      /  [ "Freelancer2", "2015-10", Date.today ] \
+      /], { library: { style: 'box', forceIFrame: true, \
+      /  backgroundColor: '#171F24',  timeline: { \
+      /      groupByRowLabel: true, \
+      /      showRowLabels: false, \
+      /      showBarLabels: false \
+      /  } \
+      /}}
+
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+
+  .row#education
+    .col-xs-12.title#education-title
+      | Education
+    .col-xs-6.sub-title
+      | Hamilton college
+    .col-xs-6.date
+      |  Class of 2015
+    .col-xs-12
+      | Bachelor of Arts, Double Major: Computer Science and Economics.
+
+    .col-xs-12.sub-title#related-coursework
+      | Related Coursework
+    .col-xs-12
+      ul
+        li Data Structures
+        li Database Theory and Practice
+        li Operating Systems
+        li Algorithms
+        li Principles of Programming Languages
+        li Game Theory
+        li Economic Statistics
+
+
+
+
+
+  .row#work-experience
+    .col-xs-12.title Work Experience
+    .col-xs-12.content
+      .row#work-freelance
+        .col-xs-6.sub-title Freelance Web Developer
+        .col-xs-6.date March 2016 - Present
+        .col-xs-12.description
+          |
+      .row#work-hifi
+        .col-xs-6
+          span.sub-title
+            | Software Engineer&nbsp
+          span.employer
+            | - High Fidelity
+        .col-xs-6.date October 2015 - March 2016
+        .col-xs-12.description
+          |
+      .row#work-econ
+        .col-xs-6
+          span.sub-title
+            | Software Engineer&nbsp
+          span.employer
+            | - Hamilton College
+        .col-xs-6.date January - May 2015
+        .col-xs-12.description
+          |
+      .row#work-econ
+        .col-xs-6
+          span.sub-title
+            | CS Research Assistant&nbsp
+          span.employer
+            | - Hamilton College
+        .col-xs-6.date May - July 2014
+        .col-xs-12.description
+          |
+
+  .row#related-experience
+    .col-xs-12.title Related Experience
+    .col-xs-12.content
+      .row#independent-study
+        .col-xs-6
+          span.sub-title
+            | Independent Study in Web Development
+        .col-xs-6.date
+          | Spring 2015
+        .col-xs-12.description
+          |
+
+
+
+  .row#skills
+
+  .row#interests
+    .row
+
+
   br
   br
   br

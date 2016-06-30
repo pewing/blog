@@ -29,6 +29,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use slim for templates
 gem 'slim-rails'
 
+# Use Chartkick for timelines
+gem 'chartkick'
+
 # Use heroku sercrets to access secrets.yml without adding to git
 # gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 # \
