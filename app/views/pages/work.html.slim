@@ -16,12 +16,12 @@
 
   .row#work-intro
     .col-md-12
-      #work-intro-photo.pull-left
-        = image_tag 'linkedin_profile.jpg'
+      #work-intro-photo
+        = image_tag 'linkedin_profile.jpg', class: 'img-responsive'
       p.text-justify#work-intro-text
         | I have been freelancing for the past&nbsp
-        = (Date.today.month - Date.parse("2016-03-15").month)
-        |  months. My main client is a well-drilling company out in Connecticut. I am taking care of both
+        = months_to_string(Date.today.month - Date.parse("2016-03-15").month)
+        | . My main client is a well-drilling company out in Connecticut. I am taking care of both
           front and backend, and design. Although I have enjoyed the independence and learning experience
           of working for myself, I look forward to joining a company again and being able to work with fellow
           developers.

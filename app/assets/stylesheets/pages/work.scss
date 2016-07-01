@@ -5,6 +5,7 @@
   font-size: $standard-font-size;
   min-height: 100;
   color: $blue1;
+  margin-bottom: 40px;
   //width: 100%;
   //width:
   //background-color: white;
@@ -28,13 +29,17 @@
     //width: 100%;
 
     #work-intro-photo {
+      //height: 30%;
+      width: 30%;
+      max-width: 216px;
+      max-height: 216px;
       //width: 20%;
-      height: auto;
-      //float: left;
+      //height: auto;
+      float: left;
     }
     #work-intro-text {
+      //float: top;
       //width: 80%;
-      //float: left;
     }
   }
 
@@ -49,5 +54,14 @@
       background-color: $blue1;
     }
   }
+
+  @media (min-width: 760px) {
+    #work-intro {
+      #work-intro-text {
+        margin-left: 231px;
+      }
+    }
+  }
+
 
 }
