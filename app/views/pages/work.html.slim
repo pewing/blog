@@ -15,8 +15,10 @@
 
 
   .row#work-intro
-    .col-xs-12
-      p.text-justify
+    .col-md-12
+      #work-intro-photo.pull-left
+        = image_tag 'linkedin_profile.jpg'
+      p.text-justify#work-intro-text
         | I have been freelancing for the past&nbsp
         = (Date.today.month - Date.parse("2016-03-15").month)
         |  months. My main client is a well-drilling company out in Connecticut. I am taking care of both
@@ -34,9 +36,9 @@
   .row
     .col-xs-12
       p
-        | I learned Ruby on Rails on the job while working at High Fidelity, a VR platform, when I was tasked to
+        | I learned Ruby on Rails while working at High Fidelity, a VR platform, when I was tasked to
           build out their domain model to allow renewals of current users. The renewal rate was above 90% for the first
-          few weeks.
+          few weeks. I also created the financial reporting web page the CFO uses.
         br
         br
         | Improving the website wasn't my only job. I gained significant experience with Python building out their
