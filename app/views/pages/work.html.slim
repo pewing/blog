@@ -19,10 +19,13 @@
       #work-intro-photo
         = image_tag 'linkedin_profile.jpg', class: 'img-responsive'
       p.text-justify#work-intro-text
-        | I have been freelancing for the past&nbsp
+        | &emsp;I am a full stack developer that works mainly in Ruby on Rails, but have extensive experience working
+          in both Python and C++.
+        br
+        br
+        | &emsp;I have been freelancing for the past&nbsp
         = months_to_string(Date.today.month - Date.parse("2016-03-15").month)
-        | . My main client is a well-drilling company out in Connecticut. I am taking care of both
-          front and backend, and design. Although I have enjoyed the independence and learning experience
+        | . My main client is a well-drilling company out in Connecticut. Although I have enjoyed the independence and learning experience
           of working for myself, I look forward to joining a company again and being able to work with fellow
           developers.
   br
@@ -33,21 +36,72 @@
 
   br
   br
+  .row#work-experience
+    .col-xs-12
+      ul.media-list
+        li.media
+          /.pull-left
+          .test
+            = image_tag 'degrazia_logo.jpg', class: 'media-object'
+          .media-body
+            h3.media-heading Freelance Web Developer
+            ul#work-degrazia-list
+              li Built a website from scratch
+              li
+                span.strong Ruby on Rails&nbsp
+                | with&nbsp
+                span.strong jQuery
+                | ,&nbsp
+                span.strong Sassy CSS
+                | , and&nbsp
+                span.strong Slim HTML
+                | .Designed the whole thing myselfDesigned the whole thing myselfDesigned the whole thing myselfD
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+              /| Ruby on Rails with jQuery, Sassy CSS, Slim HTML
+
+        li.media
+          /.pull-left
+          .test
+            = image_tag 'hifi_logo.png', class: 'media-object'
+          .media-body
+            h4.media-heading Software Engineer
+            ul#work-hifi-list
+              li Built a website from scratch
+              li
+                span.strong Ruby on Rails&nbsp
+                | with&nbsp
+                span.strong jQuery
+                | ,&nbsp
+                span.strong Sassy CSS
+                | , and&nbsp
+                span.strong Slim HTML
+                | .
+  /| Ruby on Rails with jQuery, Sassy CSS, Slim HTML
+  br
+  br
+  br
+  br
+  br
+  br
   .row
     .col-xs-12
       p
-        | I learned Ruby on Rails while working at High Fidelity, a VR platform, when I was tasked to
+        | &emsp;I learned Ruby on Rails while working at High Fidelity, a VR platform, when I was tasked to
           build out their domain model to allow renewals of current users. The renewal rate was above 90% for the first
           few weeks. I also created the financial reporting web page the CFO uses.
         br
         br
-        | Improving the website wasn't my only job. I gained significant experience with Python building out their
+        | &emsp;Improving the website wasn't my only job. I gained significant experience with Python building out their
           Continuous Integration platform, and used Ansible heavily for server provisioning. As part of the CI work, I
           learned to use the headless browser PhantomJS to automate backups of important data spread over multiple
           services. I became intimately acquainted with many AWS services, including EC2, BeanStalk, and RDS.
         br
         br
-        | High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
+        | &emsp;High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
         = link_to 'here', 'https://highfidelity.io'
         | .
 /span

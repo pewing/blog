@@ -3,12 +3,10 @@
 #work {
   font-family: $font-family;
   font-size: $standard-font-size;
-  min-height: 100;
   color: $blue1;
   margin-bottom: 40px;
   //width: 100%;
-  //width:
-  //background-color: white;
+  height: 100%;
 
   .lined {
     border-left: 2px solid $blue2;
@@ -26,36 +24,55 @@
 
   #work-intro {
     padding-top: 40px;
-    //width: 100%;
 
     #work-intro-photo {
-      //height: 30%;
       width: 30%;
       max-width: 216px;
       max-height: 216px;
-      //width: 20%;
-      //height: auto;
       float: left;
     }
-    #work-intro-text {
-      //float: top;
-      //width: 80%;
-    }
   }
 
-  #work-timeline {
-    width: 100%;
-    height: 10px;
+  #work-experience {
+    li.media {
+      position: relative;
+      margin-bottom: 100px;
+      margin-top: 0;
+      min-height: 100%;
+      //width: 100%;
 
-    #work-timeline-container {
-      width: 80%;
-      height: 40%;
-      margin: 0 auto;
-      background-color: $blue1;
+      .test {
+        position: static;
+        float: left;
+        min-height: 100px;
+        min-width: 120px;
+        height: 100%;
+      }
+
+      img.media-object {
+        position: absolute;
+        top: 40%;
+      }
+
+      .media-body {
+        //float: right;
+      }
     }
   }
+  //
+  //#work-timeline {
+  //  width: 100%;
+  //  height: 10px;
+  //
+  //  #work-timeline-container {
+  //    width: 80%;
+  //    height: 40%;
+  //    margin: 0 auto;
+  //    background-color: $blue1;
+  //  }
+  //}
 
-  @media (min-width: 760px) {
+  @media (min-width: 992px) {
     #work-intro {
       #work-intro-text {
         margin-left: 231px;
