@@ -1,27 +1,83 @@
-$('.pages.work').ready( function() {
-    //google.load('visualization', '1.0', {'packages':['corechart'], 'callback': drawChart});
-    //
-    //function drawChart() {
-    //    var data = google.visualization.arrayToDataTable([
-    //        ['Date', '', 'Expenses'],
-    //        ['2004',  1000,      400],
-    //        ['2005',  1170,      460],
-    //        ['2006',  660,       1120],
-    //        ['2007',  1030,      540]
-    //    ]);
-    //
-    //    var options = {
-    //        //curveType: 'function',
-    //        legend: { position: 'bottom' },
-    //        //backgroundColor: { fill: 'transparent'}
-    //    };
-    //
-    //    var chart = new google.visualization.LineChart(document.getElementById('work-timeline-container'));
-    //
-    //    chart.draw(data, options);
-    //}
+$('.pages.work').ready(function() {
+    $skills_box = $('#skills-box');
+    $work_experience = $('#work-experience');
+    $work_experience_top = $work_experience.position().top;
+    $work_freelance = $('#work-freelance');
+    $work_freelance_top = $work_freelance.position().top;
+    $work_hifi = $('#work-hifi');
+    $work_hifi_top = $work_hifi.position().top;
+    $skills_list = $('#skills-list');
+    $all_skills = $('.show-all');
+
+    //$skills_box.fadeOut();
+
+    $skills_box.affix({
+        offset: { top: 0 }
+    });
+
+    function specify_skills(job) {
+        $all_skills.each(function() {
+            if (!$( this).hasClass(job)) {
+                $(this).fadeTo("slow", 0);
+            }
+        });
+    }
+
+    $( window ).scroll(function() {
+        //$skills_box.removeClass('hidden');
+        var scroll = $( this ).scrollTop();
+
+        console.log(scroll, $work_experience_top);
+
+        if (scroll > $work_freelance_top) {
+            $skills_box.fadeIn("slow");
+            if (scroll > $work_freelance_top && scroll < $work_hifi_top) {
+                specify_skills('show-freelance');
+            }
+
+            if (scroll > $work_hifi_top && scroll < $work_hifi_top) {
+                specify_skills('show-hifi');
+            }
+            //$skills_box.fadeIn("fast", function() {
+            //    console.log($work_experience_top);
+            //    console.log(scroll);
+            //});
+        }
+        else {
+            //$skills_box.fadeOut("slow", function() {
+            //    //console.log($work_freelance_top);
+            //    //console.log(scroll);
+            //});
+        }
+
+
+    });
+
+
 });
 
+
+//google.load('visualization', '1.0', {'packages':['corechart'], 'callback': drawChart});
+//
+//function drawChart() {
+//    var data = google.visualization.arrayToDataTable([
+//        ['Date', '', 'Expenses'],
+//        ['2004',  1000,      400],
+//        ['2005',  1170,      460],
+//        ['2006',  660,       1120],
+//        ['2007',  1030,      540]
+//    ]);
+//
+//    var options = {
+//        //curveType: 'function',
+//        legend: { position: 'bottom' },
+//        //backgroundColor: { fill: 'transparent'}
+//    };
+//
+//    var chart = new google.visualization.LineChart(document.getElementById('work-timeline-container'));
+//
+//    chart.draw(data, options);
+//}
 
 //var data = new google.visualization.DataTable(allowHtml=true);
 //data.addColumn('string', 'Role');

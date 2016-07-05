@@ -28,48 +28,31 @@
         | . My main client is a well-drilling company out in Connecticut. Although I have enjoyed the independence and learning experience
           of working for myself, I look forward to joining a company again and being able to work with fellow
           developers.
+
   br
   br
-  .row
-    p
-      | Before that ...
+  br
+  br
+
 
   br
   br
   .row#work-experience
-    .col-xs-12
+    .col-xs-9
+      br
+      br
+      br
+      br
+      br
+      br
       ul.media-list
-        li.media
+        li.media#work-freelance
           /.pull-left
           .work-experience-image
             = image_tag 'degrazia_logo.jpg', class: 'media-object'
           .media-body
             h4.media-heading Freelance Web Developer
-            ul#work-degrazia-list
-              li Built a website from scratch
-              li
-                span.strong Ruby on Rails&nbsp
-                | with&nbsp
-                span.strong jQuery
-                | ,&nbsp
-                span.strong Sassy CSS
-                | , and&nbsp
-                span.strong Slim HTML
-                | .Designed the whole thing myselfDesigned the whole thing myselfDesigned the whole thing myselfD
-              li Designed the whole thing myself
-              li Designed the whole thing myself
-              li Designed the whole thing myself
-              li Designed the whole thing myself
-              li Designed the whole thing myself
-              /| Ruby on Rails with jQuery, Sassy CSS, Slim HTML
-
-        li.media
-          /.pull-left
-          .work-experience-image
-            = image_tag 'hifi_logo.png', class: 'media-object'
-          .media-body
-            h4.media-heading Software Engineer
-            ul#work-hifi-list
+            ul
               li Built a website from scratch
               li
                 span.strong Ruby on Rails&nbsp
@@ -80,10 +63,50 @@
                 | , and&nbsp
                 span.strong Slim HTML
                 | .
+              li Designed the website,
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+              li Designed the whole thing myself
+
+        li.media#work-hifi
+          /.pull-left
+          .work-experience-image
+            = image_tag 'hifi_logo.png', class: 'media-object'
+          .media-body
+            h4.media-heading
+              | Software Engineer -&nbsp
+              span High Fidelity
+
+            ul
+              li Implemented subscription renewal of our product to the website, which saw over a 95% renewal rate in the first two weeks.
+              li Built an online financial reporting service for the CFO using AJAX.
+              li Automated backups,
+              li Quickly learned various programming languages to meet the varied needs of the company.
+
             br
             | &emsp;High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
             = link_to 'here', 'https://highfidelity.io'
             | .
+
+    .col-xs-3
+      #skills-box.affix-top data-spy="affix" data-offset-top="0"
+        h4.text-left Languages
+        ul.text-right#skills-list
+          /b.text-left Languages
+          li#skills-ruby.show-all.show-freelance.show-hifi Ruby
+          li#skills-python.show-all.show-hifi Python
+          li#skills-cplusplus.show-all.show-hifi C++
+          li#skills-rails.show-all.show-freelance.show-hifi Rails
+          li#skills-django.show-all.show-hifi Django
+          li#skills-ansible.show-all.show-hifi Ansible
+          li#skills-bash.show-all.show-hifi Bash
+          li#skills-jquery.show-all.show-freelance.show-hifi jQuery
+          li#skills-node.show-all.show-hifi Node.js
+          li#skills-phantom.show-all.show-hifi PhantomJS
+          li#skills-postgres.show-all.show-hifi PostgreSQL
+
+
   /| Ruby on Rails with jQuery, Sassy CSS, Slim HTML
   br
   br
