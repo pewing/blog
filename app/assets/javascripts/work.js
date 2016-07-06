@@ -18,8 +18,17 @@ $('.pages.work').ready(function() {
 
 
     $skills_box.affix({
-        //offset: { top: $work_experience_top - $( window ).height()}
-        offset: { top: ($( window ).height())/2 }
+        offset: { top: ($skills_box.position().top - ($( window ).height())/2) }
+    });
+
+    $skills_box.on('affixed.bs.affix', function () {
+        console.log($( window ).height()/2);
+        $(this).css('top', ($( window ).height())/2);
+        //$(this).css('top', 0);
+    });
+
+    $skills_box.on('affixed-top.bs.affix', function () {
+        $(this).removeAttr('style');
     });
 
     function specify_skills(job) {
@@ -34,10 +43,7 @@ $('.pages.work').ready(function() {
     }
 
     $( window ).scroll(function() {
-        //$skills_box.removeClass('hidden');
         var scroll = $( this ).scrollTop() + ($( this).height())/2;
-
-        //console.log(scroll, $work_freelance_top, $work_experience_top, $( this).height());
 
         if (scroll > $work_freelance_top) {
             //$skills_box.fadeIn("slow");
@@ -48,20 +54,12 @@ $('.pages.work').ready(function() {
             if (scroll > $work_hifi_top && scroll < $work_hifi_top) {
                 specify_skills('show-hifi');
             }
-            //$skills_box.fadeIn("fast", function() {
-            //    console.log($work_experience_top);
-            //    console.log(scroll);
-            //});
         }
-        else {
+        //else {
             //$skills_box.fadeOut("slow", function() {
             //    //console.log($work_freelance_top);
             //    //console.log(scroll);
             //});
-        }
-
-
+        //}
     });
-
-
 });
