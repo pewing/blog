@@ -1,6 +1,6 @@
 = title "Work"
 
-.container#work
+.container.work
   /.row
   /  .col-xs-4
   /    p.text-center
@@ -34,6 +34,25 @@
   br
   br
   br
+.container-fluid.work
+  /.col-xs-3.pull-right
+  #skills-box.affix-top data-spy="affix"
+    h4.text-left Languages
+    ul.text-right#skills-list
+      /b.text-left Languages
+      li#skills-ruby.show-all.show-freelance.show-hifi Ruby
+      li#skills-python.show-all.show-hifi Python
+      li#skills-cplusplus.show-all.show-hifi C++
+      li#skills-rails.show-all.show-freelance.show-hifi Rails
+      li#skills-django.show-all.show-hifi Django
+      li#skills-ansible.show-all.show-hifi Ansible
+      li#skills-bash.show-all.show-hifi Bash
+      li#skills-jquery.show-all.show-freelance.show-hifi jQuery
+      li#skills-node.show-all.show-hifi Node.js
+      li#skills-phantom.show-all.show-hifi PhantomJS
+      li#skills-postgres.show-all.show-hifi PostgreSQL
+
+.container.work
   .row#work-experience
     .col-xs-9
       br
@@ -86,22 +105,7 @@
             = link_to 'here', 'https://highfidelity.io'
             | .
 
-    .col-xs-3
-      #skills-box.affix-top data-spy="affix"
-        h4.text-left Languages
-        ul.text-right#skills-list
-          /b.text-left Languages
-          li#skills-ruby.show-all.show-freelance.show-hifi Ruby
-          li#skills-python.show-all.show-hifi Python
-          li#skills-cplusplus.show-all.show-hifi C++
-          li#skills-rails.show-all.show-freelance.show-hifi Rails
-          li#skills-django.show-all.show-hifi Django
-          li#skills-ansible.show-all.show-hifi Ansible
-          li#skills-bash.show-all.show-hifi Bash
-          li#skills-jquery.show-all.show-freelance.show-hifi jQuery
-          li#skills-node.show-all.show-hifi Node.js
-          li#skills-phantom.show-all.show-hifi PhantomJS
-          li#skills-postgres.show-all.show-hifi PostgreSQL
+
 
 
   /| Ruby on Rails with jQuery, Sassy CSS, Slim HTML
