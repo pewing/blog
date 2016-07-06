@@ -11,51 +11,67 @@ $('.pages.work').ready(function() {
     var work_hifi_bottom = work_hifi_top + $work_hifi.height();
     //var $skills_list = $('#skills-list');
     var $all_skills = $('.show-all');
+    var $window = $( window );
+    var window_height = $window.height();
 
 
     $skills_box.affix({
-        offset: { top: ($skills_box.position().top - ($( window ).height())*0.4) }
+        offset: { top: ($skills_box.position().top - (window_height)*0.4) }
     });
 
-    $skills_box.on('affixed.bs.affix', function () {
-        $(this).css('top', '40%');
+    $skills_box.on('affixed.bs.affix', function() {
+        $skills_box.addClass('put-middle');
     });
 
-    $skills_box.on('affixed-top.bs.affix', function () {
-        $(this).removeAttr('style');
+    $skills_box.on('affixed-top.bs.affix', function() {
+        $skills_box.removeClass('put-middle');
     });
 
     function specify_skills(job) {
-        $all_skills.map(function() {
-            if (!$( this).hasClass(job)) {
-                $( this ).fadeTo("slow", 0.3);
+        console.log("in specify skills");
+        $all_skills.each(function() {
+            var $skill = $( this );
+            if (!$skill.hasClass(job)) {
+                console.log("1");
+                $skill.fadeTo("slow", 0.3);
             }
             else {
-                $( this ).fadeTo("slow", 1);
+                $skill.fadeTo("slow", 1);
+                console.log("2");
             }
         });
     }
 
-    $( window ).scroll(function() {
-        var scroll = $( this ).scrollTop() + ($( this ).height())/2;
-
+    function test_scroll(scroll) {
+        console.log(scroll);
         if (scroll > work_freelance_top) {
             if (scroll > work_freelance_top && scroll < work_freelance_bottom) {
+                console.log("freelancing");
                 specify_skills('show-freelance');
             }
 
             else if (scroll > work_hifi_top && scroll < work_hifi_bottom) {
+                console.log("hifi");
                 specify_skills('show-hifi');
             }
 
             else {
-              specify_skills('show-all');
+                specify_skills('show-all');
             }
         }
         else {
             specify_skills('show-all');
         }
+    }
+
+    $window.scroll(function() {
+       test_scroll($window.scrollTop() + (window_height)/2);
     });
+    //    //var $win = $( this );
+    //    var scroll = $window.scrollTop() + (window_height)/2;
+    //
+    //
+    //});
 });
 
 //TODO: scrolling color change is hella slow
