@@ -28,30 +28,30 @@ $('.pages.work').ready(function() {
     });
 
     function specify_skills(job) {
-        console.log("in specify skills");
+        //console.log("in specify skills");
         $all_skills.each(function() {
             var $skill = $( this );
             if (!$skill.hasClass(job)) {
-                console.log("1");
+                //console.log("1");
                 $skill.fadeTo("slow", 0.3);
             }
             else {
                 $skill.fadeTo("slow", 1);
-                console.log("2");
+                //console.log("2");
             }
         });
     }
 
     function test_scroll(scroll) {
-        console.log(scroll);
+        //console.log(scroll);
         if (scroll > work_freelance_top) {
             if (scroll > work_freelance_top && scroll < work_freelance_bottom) {
-                console.log("freelancing");
+                //console.log("freelancing");
                 specify_skills('show-freelance');
             }
 
             else if (scroll > work_hifi_top && scroll < work_hifi_bottom) {
-                console.log("hifi");
+                //console.log("hifi");
                 specify_skills('show-hifi');
             }
 
