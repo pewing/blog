@@ -1,5 +1,5 @@
 = title "Work"
-
+/data-spy="scroll" data-target="#skills-box"
 #work
   .container
     .row#work-intro
@@ -20,11 +20,16 @@
   .container-fluid
     #skills-box.affix-top data-spy="affix"
       h4.text-left Languages
-      ul.text-right#skills-list
-        /b.text-left Languages
-        li#skills-ruby.show-all.show-freelance.show-hifi Ruby
-        li#skills-python.show-all.show-hifi Python
-        li#skills-cplusplus.show-all.show-hifi C++
+      ul.text-right#skills-list.nav
+        li#skills-ruby.show-all.show-freelance.show-hifi
+          | Ruby
+          a href="#work-freelance"
+          a href="#work-hifi"
+              /|Ruby
+        li#skills-python.show-all.show-hifi
+          a href="#work-freelance" Python
+        li#skills-cplusplus.show-all.show-hifi
+          a href="#section3" C++
         li#skills-rails.show-all.show-freelance.show-hifi Rails
         li#skills-django.show-all.show-hifi Django
         li#skills-ansible.show-all.show-hifi Ansible
@@ -37,12 +42,6 @@
   .container
     .row#work-experience
       .col-xs-9
-        br
-        br
-        br
-        br
-        br
-        br
         ul.media-list
           li.media#work-freelance
             /.pull-left
@@ -66,12 +65,54 @@
                 li Designed the whole thing myself
                 li Designed the whole thing myself
                 li Designed the whole thing myself
-
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
+                br
           li.media#work-hifi
             /.pull-left
             .work-experience-image
               = image_tag 'hifi_logo.png', class: 'media-object'
             .media-body
+              h4.media-heading
+                | Software Engineer -&nbsp
+                span High Fidelity
+
+              ul
+                li Implemented subscription renewal of our product to the website, which saw over a 95% renewal rate in the first two weeks.
+                li Built an online financial reporting service for the CFO using AJAX.
+                li Automated backups,
+                li Quickly learned various programming languages to meet the varied needs of the company.
+
+              br
+              | &emsp;High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
+              = link_to 'here', 'https://highfidelity.io'
+              | .
+              br
+              br
+              br
+              br
+              br
+              br
+          li.media#work-hamilton
+            /.pull-left
+            .work-experience-image
+              = image_tag 'hifi_logo.png', class: 'media-object'
+            .media-body#section3
               h4.media-heading
                 | Software Engineer -&nbsp
                 span High Fidelity
