@@ -34,8 +34,9 @@
   }
 
   #skills-box {
-    display: none;
-    width: 20%;
+    //margin-right: 0;
+    width: 10%;
+    min-width: 90px;
     right: 0;
     font-size: 13px;
     text-align: right;
@@ -43,7 +44,8 @@
     border-left: 1px $blue2 solid;
 
     ul {
-      //padding: 0;
+      padding: 0;
+      width: 100%;
       line-height: 14px;
       list-style-type: none;
 
@@ -56,13 +58,17 @@
 
     &.affix {
       position: fixed;
-      top: 50%;
+      top: 200px;
       right: 0;
       z-index: 10;
     }
 
     &.affix-top {
-      display: none;
+      //display: none;
+      //position: absolute;
+      //right: 0;
+      //float: right;
+      //text-align: right;
     }
 
   }
