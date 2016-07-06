@@ -39,9 +39,9 @@
   }
 
   #skills-box {
+    padding-right: 5px;
     width: 10%;
     min-width: 90px;
-    right: 0;
     font-size: 13px;
     text-align: right;
     float: right;
@@ -61,6 +61,7 @@
     &.affix {
       position: fixed;
       right: 0;
+      top: 40%;
       z-index: 10;
     }
 
