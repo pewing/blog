@@ -5,8 +5,10 @@ $('.pages.work').ready(function() {
     //var $work_experience_top = $work_experience.offset().top;
     var $work_freelance = $('#work-freelance');
     var work_freelance_top = $work_freelance.offset().top;
+    var work_freelance_bottom = work_freelance_top + $work_freelance.height();
     var $work_hifi= $('#work-hifi');
     var work_hifi_top = $work_hifi.offset().top;
+    var work_hifi_bottom = work_hifi_top + $work_hifi.height();
     //var $skills_list = $('#skills-list');
     var $all_skills = $('.show-all');
 
@@ -24,7 +26,7 @@ $('.pages.work').ready(function() {
     });
 
     function specify_skills(job) {
-        $all_skills.each(function() {
+        $all_skills.map(function() {
             if (!$( this).hasClass(job)) {
                 $( this ).fadeTo("slow", 0.3);
             }
@@ -35,22 +37,25 @@ $('.pages.work').ready(function() {
     }
 
     $( window ).scroll(function() {
-        var scroll = $( window ).scrollTop() + ($( this ).height())/2;
+        var scroll = $( this ).scrollTop() + ($( this ).height())/2;
 
         if (scroll > work_freelance_top) {
-            if (scroll > work_freelance_top && scroll < work_hifi_top) {
+            if (scroll > work_freelance_top && scroll < work_freelance_bottom) {
                 specify_skills('show-freelance');
             }
 
-            if (scroll > work_hifi_top && scroll < work_hifi_top) {
+            else if (scroll > work_hifi_top && scroll < work_hifi_bottom) {
                 specify_skills('show-hifi');
             }
+
+            else {
+              specify_skills('show-all');
+            }
         }
-        //else {
-            //$$skills_box.fadeOut("slow", function() {
-            //    //console.log($work_freelance_top);
-            //    //console.log(scroll);
-            //});
-        //}
+        else {
+            specify_skills('show-all');
+        }
     });
 });
+
+//TODO: scrolling color change is hella slow
