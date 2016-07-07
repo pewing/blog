@@ -1,13 +1,12 @@
 @import "_formats";
 
 #work {
+  position: relative;
   font-family: $font-family;
   font-size: $standard-font-size;
-  min-height: 100;
   color: $blue1;
-  //width: 100%;
-  //width:
-  //background-color: white;
+  margin-bottom: 40px;
+  height: 100%;
 
   .lined {
     border-left: 2px solid $blue2;
@@ -24,19 +23,111 @@
   }
 
   #work-intro {
-    padding-top: 40px;
-  }
+    padding-top: 150px;
+    padding-bottom: 100px;
 
-  #work-timeline {
-    width: 100%;
-    height: 10px;
-
-    #work-timeline-container {
-      width: 80%;
-      height: 40%;
-      margin: 0 auto;
-      background-color: $blue1;
+    #work-intro-photo {
+      width: 30%;
+      max-width: 216px;
+      max-height: 216px;
+      float: left;
     }
   }
 
+  .container-fluid {
+    padding: 0;
+    height: 194px;
+    margin-bottom: 50px;
+  }
+
+  #skills-box {
+    padding-right: 5px;
+    width: 10%;
+    min-width: 90px;
+    font-size: 13px;
+    text-align: right;
+    float: right;
+    //border-left: 1px $blue2 solid;
+
+    ul {
+      padding: 0;
+      width: 100%;
+      line-height: 14px;
+      list-style-type: none;
+
+      li {
+        padding-left: 2px;
+        opacity: 0.3;
+        -webkit-transition: opacity 1s;
+        transition: opacity 1s;
+
+        a {
+          padding: 0;
+          pointer-events: none;
+          cursor: default;
+          color: $blue1;
+        }
+
+        &.active {
+          opacity: 1;
+          -webkit-transition: opacity 1s;
+          transition: opacity 1s;
+        }
+      }
+    }
+
+    &.affix {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      z-index: 10;
+    }
+
+    &.put-middle {
+      top: 40%;
+    }
+  }
+
+  #work-experience {
+    font-size: 15px;
+
+    li.media {
+      position: relative;
+      margin-bottom: 200px;
+      margin-top: 0;
+      min-height: 100%;
+      height: 100%;
+      width: 100%;
+
+      .work-experience-image {
+        //position: static;
+        float: left;
+        min-height: 100px;
+        min-width: 120px;
+        margin-right: 20px;
+        //margin: 0 auto;
+        //height: 100%;
+      }
+
+      img.media-object {
+        //position: absolute;
+        //top: 40%;
+      }
+
+      .media-body {
+
+        ul li {
+
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    #work-intro {
+      #work-intro-text {
+        margin-left: 231px;
+      }
+    }
+  }
 }

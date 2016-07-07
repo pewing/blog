@@ -32,6 +32,9 @@ gem 'slim-rails'
 # Use Chartkick for timelines
 gem 'chartkick'
 
+# Use rails-assets for asset management
+gem 'rails-assets-jquery-readyselector'
+
 # Use heroku sercrets to access secrets.yml without adding to git
 # gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 # \
