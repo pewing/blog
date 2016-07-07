@@ -18,21 +18,12 @@ $('.pages.work').ready(function() {
     var $window = $( window );
     var window_height = $window.height();
 
-    console.log(skills_box_top - (window_height)*0.4);
-    console.log(work_hifi_bottom);
-
-    //debugger;
-
     $skills_box.affix({
         offset: {
             top: (skills_box_top - (window_height)*0.4),
             bottom: $( document).height() - work_hamilton_bottom
         }
     });
-
-    console.log(skills_box_top - (window_height)*0.4);
-    console.log(work_hifi_bottom);
-    //debugger;
 
     $skills_box.on('affixed.bs.affix ', function() {
         $skills_box.addClass('put-middle');
@@ -45,24 +36,24 @@ $('.pages.work').ready(function() {
 
     $('body').scrollspy({
         target: '#skills-box',
-        offset: window_height*0.4
-    });
-
-    $('body').on('activate.bs.scrollspy', function() {
-        $all_skills.each(function() {
-           var $skill = $( this );
-            if ($skill.hasClass('active')) {
-                $skill.fadeTo("slow", 1);
-            }
-            else {
-                $skill.fadeTo("slow", 0.3);
-            }
-        });
+        offset: window_height*0.5
     });
 
 
 });
 
+//$('body').on('activate.bs.scrollspy', function() {
+//    console.log("hi");
+//    //$all_skills.each(function() {
+//    //   var $skill = $( this );
+//    //    if ($skill.hasClass('active')) {
+//    //        $skill.fadeTo("slow", 1);
+//    //    }
+//    //    else {
+//    //        $skill.fadeTo("slow", 0.3);
+//    //    }
+//    //});
+//});
 
 //function specify_skills(job) {
 //    //console.log("in specify skills");
