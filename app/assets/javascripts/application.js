@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require jquery.turbolinks
 //= require jquery-readyselector
+//= require bootstrap-sprockets
 //= require_tree .
