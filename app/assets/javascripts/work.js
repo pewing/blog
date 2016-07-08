@@ -21,7 +21,7 @@ $('.pages.work').ready(function() {
     $skills_box.affix({
         offset: {
             top: (skills_box_top - (window_height)*0.4),
-            bottom: $( document).height() - work_hamilton_bottom
+            bottom: $( document).height() - work_hamilton_bottom - 80
         }
     });
 
@@ -38,67 +38,4 @@ $('.pages.work').ready(function() {
         target: '#skills-box',
         offset: window_height*0.5
     });
-
-
 });
-
-//$('body').on('activate.bs.scrollspy', function() {
-//    console.log("hi");
-//    //$all_skills.each(function() {
-//    //   var $skill = $( this );
-//    //    if ($skill.hasClass('active')) {
-//    //        $skill.fadeTo("slow", 1);
-//    //    }
-//    //    else {
-//    //        $skill.fadeTo("slow", 0.3);
-//    //    }
-//    //});
-//});
-
-//function specify_skills(job) {
-//    //console.log("in specify skills");
-//    $all_skills.each(function() {
-//        var $skill = $( this );
-//        if (!$skill.hasClass(job)) {
-//            //console.log("1");
-//            $skill.fadeTo("slow", 0.3);
-//        }
-//        else {
-//            $skill.fadeTo("slow", 1);
-//            //console.log("2");
-//        }
-//    });
-//}
-//
-//function test_scroll(scroll) {
-//    //console.log(scroll);
-//    if (scroll > work_freelance_top) {
-//        if (scroll > work_freelance_top && scroll < work_freelance_bottom) {
-//            //console.log("freelancing");
-//            specify_skills('show-freelance');
-//        }
-//
-//        else if (scroll > work_hifi_top && scroll < work_hifi_bottom) {
-//            //console.log("hifi");
-//            specify_skills('show-hifi');
-//        }
-//
-//        else {
-//            specify_skills('show-all');
-//        }
-//    }
-//    else {
-//        specify_skills('show-all');
-//    }
-//}
-
-//$window.scroll(function() {
-//   test_scroll($window.scrollTop() + (window_height)/2);
-//});
-
-
-//    //var $win = $( this );
-//    var scroll = $window.scrollTop() + (window_height)/2;
-//
-//
-//});
