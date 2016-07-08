@@ -13,23 +13,11 @@ nav#navbar.navbar.navbar-default
       li.navbar-box.navbar-page
         = link_to 'about', about_path, id: 'about-header'
       li.navbar-box.navbar-page
-        a.btn.btn-mini#work-header href="javascript:;"
-          | work
-        /= link_to 'work', work_path, id: 'work-header'
-      /li.navbar-box.navbar-page
-      /  | /
+        = link_to 'work', work_path, id: 'work-header'
       li.navbar-box.navbar-page
         = link_to 'contact', contact_path, id: 'contact-header'
-
       li.navbar-box.navbar-page
-        /a.btn.btn-mini href="javascript:;"
-        /  | About
         = link_to 'recipes', cookbook_index_path, id: 'cookbook-header'
-.alert.alert-info#nothing-alert
-  strong
-    | Working on it!&nbsp
-  | There's nothing here yet. Please come back later
-
 
 
 = render partial: '/layouts/contact'

@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -7,7 +8,7 @@ gem 'rails', '4.2.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Bootstrap for sass
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '3.1.1.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -28,6 +29,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use slim for templates
 gem 'slim-rails'
+
+# Use Chartkick for timelines
+gem 'chartkick'
+
+# Use rails-assets for asset management
+gem 'rails-assets-jquery-readyselector'
 
 # Use heroku sercrets to access secrets.yml without adding to git
 # gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'

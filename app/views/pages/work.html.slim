@@ -1,5 +1,284 @@
-.container#work
-  | THIS IS WORK
+= title "Work"
+/data-spy="scroll" data-target="#skills-box"
+#work
+  .container
+    .row#work-intro
+      .col-md-12
+        #work-intro-photo
+          = image_tag 'linkedin_profile.jpg', class: 'img-responsive'
+        p.text-justify#work-intro-text
+          | &emsp;I am a full stack developer that works mainly in Ruby on Rails, but have extensive experience working
+            in both Python and C++.
+          br
+          br
+          | &emsp;I have been freelancing for the past&nbsp
+          = months_to_string(Date.today.month - Date.parse("2016-03-15").month)
+          | . My main client is a well-drilling company out in Connecticut. Although I have enjoyed the independence and learning experience
+            of working for myself, I look forward to joining a company again and being able to work with fellow
+            developers.
+
+  .container-fluid#ignore
+    #skills-box.affix-top data-spy="affix"
+      h4.text-left Languages
+      ul.text-right#skills-list.nav
+        li#skills-ruby.show-all.show-freelance.show-hifi
+          | Ruby
+          a href="#work-freelance"
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-python.show-all.show-hifi
+          | Python
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-cplusplus.show-all.show-hifi
+          | C++
+          a href="#work-hifi"
+          a href="#work-hamilton"
+          a href="#ignore"
+        li#skills-rails.show-all.show-freelance.show-hifi
+          | Rails
+          a href="#work-freelance"
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-django.show-all.show-hifi
+          | Django
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-ansible.show-all.show-hifi
+          | Ansible
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-bash.show-all.show-hifi
+          | Bash
+          a href="#work-hifi"
+          a href="#work-hamilton"
+          a href="#ignore"
+        li#skills-jquery.show-all.show-freelance.show-hifi
+          | jQuery
+          a href="#work-freelance"
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-node.show-all.show-hifi
+          | Node.js
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-phantom.show-all.show-hifi
+          | PhantomJS
+          a href="#work-hifi"
+          a href="#ignore"
+        li#skills-postgres.show-all.show-hifi
+          | PostgreSQL
+          a href="#work-freelance"
+          a href="#work-hifi"
+          a href="#work-hamilton"
+          a href="#ignore"
+
+  .container
+    .row#work-experience
+      .col-xs-9
+        ul.media-list
+          li.media#work-freelance
+            /.pull-left
+            .work-experience-image
+              = image_tag 'degrazia_logo.jpg', class: 'media-object img-responsive'
+            .media-body
+              h4.media-heading Freelance Web Developer
+              ul
+                li Designed every aspect of website
+                li
+                  span.strong Ruby on Rails&nbsp
+                  | with&nbsp
+                  span.strong jQuery
+                  | ,&nbsp
+                  span.strong Sassy CSS
+                  | , and&nbsp
+                  span.strong Slim HTML
+                  | .
+                li Optimized SEO for increased traffic.
+                li Interacted directly with customers to get exact expectations and requirements.
+
+          li.media#work-hifi
+            /.pull-left
+            .work-experience-image
+              = image_tag 'hifi_logo.png', class: 'media-object'
+            .media-body
+              h4.media-heading
+                | Software Engineer -&nbsp
+                span High Fidelity
+
+              ul
+                li Implemented subscription renewal of our product to the website, which saw over a 95% renewal rate in the first two weeks.
+                li Built an online financial reporting service used by the CFO using AJAX.
+                li Automated backups using PhantomJS, and server provisioning using Ansible, both through Django workers.
+                li Quickly learned various programming languages to meet the varied needs of the company.
+                li Became very familiar with various AWS services, including EC2, BeanStal, and RDS.
+
+              br
+              | &emsp;High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
+              = link_to 'here', 'https://highfidelity.io'
+              | .
+
+          li.media#work-hamilton
+            .work-experience-image
+              = image_tag 'hamilton_logo.png', class: 'media-object'
+            .media-body
+              h4.media-heading
+                | Software Engineer -&nbsp
+                span Hamilton College
+              ul
+                li Wrote a parallelized macroeconomic model for professor of Economics.
+                li C++, with the MPI MVAPICH2, and a Postgres database.
+                li Professor was so impressed with my work the previous semester that he hired me to keep working for him.
+                li Run-time reduced from almost 2 days to less than 3 hours.
+
+
+    /| Ruby on Rails with jQuery, Sassy CSS, Slim HTML
+    /br
+    /br
+    /br
+    /br
+    /br
+    /br
+    /.row
+    /  .col-xs-12
+    /    p
+    /      | &emsp;I learned Ruby on Rails while working at High Fidelity, a VR platform, when I was tasked to
+    /        build out their domain model to allow renewals of current users. The renewal rate was above 90% for the first
+    /        few weeks. I also created the financial reporting web page the CFO uses.
+    /      br
+    /      br
+    /      | &emsp;Improving the website wasn't my only job. I gained significant experience with Python building out their
+    /        Continuous Integration platform, and used Ansible heavily for server provisioning. As part of the CI work, I
+    /        learned to use the headless browser PhantomJS to automate backups of important data spread over multiple
+    /        services. I became intimately acquainted with many AWS services, including EC2, BeanStalk, and RDS.
+    /      br
+    /      br
+    /      | &emsp;High Fidelity is doing really exciting work, and I highly recommend you check them out&nbsp
+    /      = link_to 'here', 'https://highfidelity.io'
+    /      | .
+/span
+/  strong Ruby
+/| ,&nbsp
+/span
+/  strong Python
+/| , and&nbsp
+/span
+/  strong C++
+/| , although I'm familiar with a wide variety of them.
+
+  /.row
+    .col-xs-12#work-timeline
+      #work-timeline-container
+      /= timeline [ \
+      /  [ "Freelancer", "2016-03", Date.today ],\
+      /  [ "Freelancer2", "2015-10", Date.today ] \
+      /], { library: { style: 'box', forceIFrame: true, \
+      /  backgroundColor: '#171F24',  timeline: { \
+      /      groupByRowLabel: true, \
+      /      showRowLabels: false, \
+      /      showBarLabels: false \
+      /  } \
+      /}}
+
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+
+  .row#education
+    .col-xs-12.title#education-title
+      | Education
+    .col-xs-6.sub-title
+      | Hamilton college
+    .col-xs-6.date
+      |  Class of 2015
+    .col-xs-12
+      | Bachelor of Arts, Double Major: Computer Science and Economics.
+
+    .col-xs-12.sub-title#related-coursework
+      | Related Coursework
+    .col-xs-12
+      ul
+        li Data Structures
+        li Database Theory and Practice
+        li Operating Systems
+        li Algorithms
+        li Principles of Programming Languages
+        li Game Theory
+        li Economic Statistics
+
+
+
+
+
+  .row#work-experience
+    .col-xs-12.title Work Experience
+    .col-xs-12.content
+      .row#work-freelance
+        .col-xs-6.sub-title Freelance Web Developer
+        .col-xs-6.date March 2016 - Present
+        .col-xs-12.description
+          |
+      .row#work-hifi
+        .col-xs-6
+          span.sub-title
+            | Software Engineer&nbsp
+          span.employer
+            | - High Fidelity
+        .col-xs-6.date October 2015 - March 2016
+        .col-xs-12.description
+          |
+      .row#work-econ
+        .col-xs-6
+          span.sub-title
+            | Software Engineer&nbsp
+          span.employer
+            | - Hamilton College
+        .col-xs-6.date January - May 2015
+        .col-xs-12.description
+          |
+      .row#work-econ
+        .col-xs-6
+          span.sub-title
+            | CS Research Assistant&nbsp
+          span.employer
+            | - Hamilton College
+        .col-xs-6.date May - July 2014
+        .col-xs-12.description
+          |
+
+  .row#related-experience
+    .col-xs-12.title Related Experience
+    .col-xs-12.content
+      .row#independent-study
+        .col-xs-6
+          span.sub-title
+            | Independent Study in Web Development
+        .col-xs-6.date
+          | Spring 2015
+        .col-xs-12.description
+          |
+
+
+
+  .row#skills
+
+  .row#interests
+    .row
+
+
   br
   br
   br
