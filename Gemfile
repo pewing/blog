@@ -34,6 +34,7 @@ gem 'slim-rails'
 gem 'chartkick'
 
 # Use rails-assets for asset management
+gem 'rails-assets-bootstrap'
 gem 'rails-assets-jquery-readyselector'
 
 # Use heroku sercrets to access secrets.yml without adding to git
