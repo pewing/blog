@@ -1,5 +1,7 @@
 $('.pages.about').ready(function() {
 
+    console.log("---");
+
     var $location_hover = $('#hover-location');
 
     var reset_location = function() {
