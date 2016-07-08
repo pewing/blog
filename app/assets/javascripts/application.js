@@ -17,3 +17,7 @@
 //= require jquery-readyselector
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function() {
+    $('a[href="' + this.location.pathname + '"]').addClass('nav-active')
+});
