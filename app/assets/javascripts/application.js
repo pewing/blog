@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery-readyselector
 //= require bootstrap
+//= require jquery.scrollpath
 //= require_tree .
 
 $(document).ready(function() {
