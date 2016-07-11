@@ -1,6 +1,7 @@
 @import "_formats";
 
 #about {
+  margin-bottom: -50px;
 
   & div {
     position: absolute;
@@ -35,17 +36,10 @@
     width: 460px;
   }
 
-  //#logo {
-  //  top: 2220px;
-  //  left: 180px;
-  //}
-
   #logo {
-    //top: 2220px;
     background-color: $blue8;
-    //width: 100%;
-    //height: 100%;
     padding-bottom: 50px;
+    overflow: visible;
 
     #image {
       height: 100%;

@@ -18,7 +18,7 @@ html lang="en"
       ga('create', 'UA-77943275-1', 'auto');
       ga('send', 'pageview');
 
-  body class="#{controller_name} #{action_name}"
+  body class="#{controller_name} #{action_name} #{yield :body_classes}"
     .wrap
       header
         = render 'layouts/navbar'
