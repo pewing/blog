@@ -10,7 +10,6 @@
 
   .about-me {
     width: 800px;
-    text-align: center;
   }
 
   .about-school {
@@ -40,6 +39,7 @@
     background-color: $blue8;
     padding-bottom: 50px;
     overflow: visible;
+    text-align: center;
 
     #image {
       height: 100%;
