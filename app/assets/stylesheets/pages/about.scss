@@ -16,6 +16,13 @@
       opacity: 0.2;
       font-size: 0.8em;
     }
+
+    .pulse {
+      -webkit-animation: pulse1 1s ease-in-out infinite;
+      -moz-animation: pulse1 1s ease-in-out infinite;
+      animation: pulse1 1s ease-in-out infinite;
+    }
+
   }
 
   .about-school {
@@ -119,6 +126,33 @@
         display: none;
       }
     }
+  }
+}
+
+@-moz-keyframes pulse1 {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@-webkit-keyframes pulse1 {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes pulse1 {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
   }
 }
 
