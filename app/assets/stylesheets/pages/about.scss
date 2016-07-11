@@ -10,6 +10,15 @@
 
   .about-me {
     width: 750px;
+    text-align: center;
+
+    .glyphicon {
+      //text-align: center;
+      //horiz-align: center;
+      //position: relative;
+      //display: inline-block;
+      opacity: 0.2;
+    }
   }
 
   .about-school {
