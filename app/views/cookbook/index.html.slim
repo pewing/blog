@@ -11,8 +11,12 @@
         | The food is best paired with good wine and good company.
 
   .row.jumbotron#recipes
-    ol.breadcrumb
-      li.active index
+    .col-xs-8
+      ol.breadcrumb
+        li.active home
+    .col-xs-4
+      = link_to new_recipes_path, "Add Recipe"
+
     /ul.nav.nav-tabs#recipes-index
     ul.nav.nav-ills.nav-stacked#recipes-index
       /li.presentation

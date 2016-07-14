@@ -11,9 +11,9 @@ Rails.application.routes.draw do
     # get 'cookbook'
   end
 
-  resources :cookbook
+  resources :recipes
 
-  
+
   # , only: :index
 
   # scope :cookbook do

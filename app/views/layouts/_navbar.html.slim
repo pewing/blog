@@ -7,9 +7,6 @@ nav#navbar.navbar.navbar-default
     - if content_for(:title) == 'Home'
       #navbar-location
     ul.nav.navbar-nav#navbar-pages
-      /li.navbar-box.navbar-page#blog-header
-      /  = link_to 'Blog', root_path
-        /blog_path
       li.navbar-box.navbar-page
         = link_to 'about', about_path, id: 'about-header'
       li.navbar-box.navbar-page
@@ -17,7 +14,7 @@ nav#navbar.navbar.navbar-default
       li.navbar-box.navbar-page
         = link_to 'contact', contact_path, id: 'contact-header'
       li.navbar-box.navbar-page
-        = link_to 'recipes', cookbook_index_path, id: 'cookbook-header'
+        = link_to 'recipes', recipes_path, id: 'recipes-header'
 
 
 = render partial: '/layouts/contact'
