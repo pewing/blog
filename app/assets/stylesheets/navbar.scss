@@ -36,6 +36,10 @@
     font-family: 'Droid Sans', sans-serif;
     letter-spacing: 2px;
 
+    &.nav-active {
+      color: #517285;
+    }
+
     &:link {
       text-decoration: none;
     }

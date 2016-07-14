@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require jquery.turbolinks
 //= require jquery-readyselector
+//= require bootstrap
+//= require jquery.scrollpath
 //= require_tree .
+
+$(document).ready(function() {
+    $('a[href="' + this.location.pathname + '"]').addClass('nav-active');
+});

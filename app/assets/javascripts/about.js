@@ -1,5 +1,27 @@
 $('.pages.about').ready(function() {
 
+    $.fn.scrollPath("getPath", {
+        scrollSpeed: 80, // Default is 50
+        rotationSpeed: Math.PI / 10 // Default is Math.PI / 15
+    })
+        .moveTo(400, 50, {name: "start"})
+        .lineTo(400, 800, {name: "about-school"})
+        .arc(200, 1200, 400, -Math.PI/2, Math.PI/2, true)
+        .lineTo(600, 1600, {name: "about-work"})
+        .lineTo(1750, 1600, {name: "about-logo"})
+        .arc(1800, 1000, 600, Math.PI/2, 0, true)
+        // Line to 'rotations'
+        .lineTo(2400, 750, {name: "about-everything-else"})
+        //.arc(1300, 50, 900, -Math.PI/2, -Math.PI, true, {rotate: Math.PI*2, name: "end"});
+        .lineTo(400, 50, {name: "end"});
+
+    $('#about').scrollPath({
+        drawPath: false,
+        wrapAround: true,
+        scrollBar: false
+    });
+
+
     var $location_hover = $('#hover-location');
 
     var reset_location = function() {
