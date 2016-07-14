@@ -1,8 +1,10 @@
+= title "Recipes"
+
 .container#cookbook
   .row#history
     .col-xs-12
       h3
-        | D.C.E. Recipes
+        | D.C.E. Recipes L:aWHTGOUVBQ
       p
         | My dad was the best cook I've ever met. He compiled a pretty impressive cookbook over
           the course of his life - recipes that I now want to share with everyone.
@@ -11,35 +13,37 @@
         | The food is best paired with good wine and good company.
 
   .row.jumbotron#recipes
-    .col-xs-8
-      ol.breadcrumb
-        li.active home
-    .col-xs-4
-      = link_to new_recipes_path, "Add Recipe"
+    .row
+      .col-xs-8
+        ol.breadcrumb
+          li.active home
+      .col-xs-4
+        = link_to "Add Recipe", new_recipe_path
+    .col-xs-12
+      ul.nav-stacked#recipes-index
 
-    /ul.nav.nav-tabs#recipes-index
-    ul.nav.nav-ills.nav-stacked#recipes-index
-      /li.presentation
-      /  a data-toggle="tab" role="tab" href="#" Poultry
-      li.presentation
-        a data-toggle="pill" role="pill" href="#" Poultry
-      li.presentation
-        a href="#" Fish
-      li.presentation
-        a href="#" Meat
-      li.presentation
-        a href="#" Pasta
-      li.presentation
-        a href="#" Starch
-      li.presentation
-        a href="#" Veg
-      li.presentation
-        a href="#" Soups
-      li.presentation
-        a href="#" Sauces
-      li.presentation
-        a href="#" Desserts
+        li.presentation
+          a href="#" Poultry
+        li.presentation
+          a href="#" Fish
+        li.presentation
+          a href="#" Meat
+        li.presentation
+          a href="#" Pasta
+        li.presentation
+          a href="#" Starch
+        li.presentation
+          a href="#" Veg
+        li.presentation
+          a href="#" Soups
+        li.presentation
+          a href="#" Sauces
+        li.presentation
+          a href="#" Desserts
 
+
+          /li.presentation
+          /  a data-toggle="tab" role="tab" href="#" Poultry
 
     /.list-group.pagination
     /  .list-group-item Poultry

@@ -18,5 +18,5 @@
 //= require_tree .
 
 $(document).ready(function() {
-    $('a[href="' + this.location.pathname + '"]').addClass('nav-active');
+    $('.navbar-page a[href="' + this.location.pathname + '"]').addClass('nav-active');
 });
