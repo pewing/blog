@@ -13,8 +13,6 @@ class RecipesController < ApplicationController
   end
 
   def create
-    puts "-----"
-    puts params[:recipe]
     @recipe = Recipe.new(
         name: params[:recipe][:name],
         category: params[:recipe][:category],
@@ -24,13 +22,13 @@ class RecipesController < ApplicationController
     begin
       if @recipe.save
         flash[:success] = "Recipe succesfully saved"
-        render :index and return
+        redirect_to recipes_path and return
       end
     rescue StandardError => e
-      logger.error "Error in recipe creation: #{ e.message }"
+      puts "Error creating new recipe: #{ e.message }"
     end
 
+    render json: { errors: "Error creating new recipe.", status: 'error' }, status: 422
   end
-
-
 end
+

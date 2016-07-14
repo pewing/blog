@@ -9,12 +9,9 @@
 
 class Recipe < ActiveRecord::Base
 
-  def index
-
-  end
-
-  def new
-
-  end
+  validates :name, presence: true,
+            uniqueness: true
+  validates :ingredients, presence: true
+  validates :instructions, presence: true
   
 end
