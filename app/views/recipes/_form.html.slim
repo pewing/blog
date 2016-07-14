@@ -1,2 +1,18 @@
+= @action
 .container
-  | :KBR GALJ L RG
+  = bootstrap_form_for(@recipe) do |r|
+    .panel.panel-default
+      .panel-heading
+        = content_for(:title)
+      .panel-body
+        = r.text_field :name, disabled: !@recipe.name.nil?
+        = r.text_field :category
+        = r.text_field :ingredients
+        = r.text_field :instructions
+
+      .panel-footer
+        = r.submit class: 'btn btn-success'
+        = link_to 'Cancel', recipes_path, class: 'btn btn link'
+
+
+

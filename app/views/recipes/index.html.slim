@@ -14,13 +14,11 @@
     .col-xs-8
       ol.breadcrumb
         li.active home
-    .col-xs-4
-      = link_to 'Add Recipe', new_recipe_path
-      br
-      br
-      br
-
-
+    .col-xs-4.text-right
+      = link_to new_recipe_path do
+        .glyphicon.glyphicon-plus
+    br
+    br
     /ul.nav.nav-tabs#recipes-index
     .row
       ul#recipes-index
