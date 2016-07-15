@@ -1,7 +1,16 @@
 class RecipesController < ApplicationController
 
   def index
+    respond_to do |format|
 
+      format.json do
+
+      end
+
+      format.html do
+
+      end
+    end
   end
 
   def new

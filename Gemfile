@@ -40,6 +40,9 @@ gem 'rails-assets-jquery-readyselector'
 # Bootstrap form for model adding/editing
 gem 'bootstrap_form'
 
+# Rails admin
+gem 'rails_admin'
+
 # Use heroku sercrets to access secrets.yml without adding to git
 # gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 # \
