@@ -13,6 +13,22 @@
       background-color: transparent;
     }
 
+    #recipe-list {
+
+
+      .recipe-list-row {
+        height: 30px;
+        td {
+          padding-top: 0;
+          padding-bottom: 0;
+          white-space: nowrap;
+          //background-color: red;
+        }
+      }
+
+
+    }
+
     //#recipes-index {
     //  display: table;
     //  width: 100%;

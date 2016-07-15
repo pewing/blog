@@ -4,11 +4,11 @@ class RecipesController < ApplicationController
     respond_to do |format|
 
       format.json do
-
+        @recipes = Recipe.find_each
       end
 
       format.html do
-
+        @recipe_count = Recipe.count
       end
     end
   end
@@ -17,9 +17,6 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
   end
 
-  def edit
-    @recipe = Recipe.find_by_name(params[:name])
-  end
 
   def create
     @recipe = Recipe.new(
@@ -39,5 +36,20 @@ class RecipesController < ApplicationController
 
     render json: { errors: "Error creating new recipe.", status: 'error' }, status: 422
   end
+
+  def edit
+    @recipe = Recipe.find_by_name(params[:name])
+  end
+
+  def update
+    @place = current_user.places.find_by_name!(params[:name])
+
+    if @place.update_attributes(edit_place_params)
+      redirect_to places_path
+    else
+      render :edit
+    end
+  end
+
 end
 
