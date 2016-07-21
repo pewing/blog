@@ -10,5 +10,12 @@ Rails.application.routes.draw do
     get 'contact'
   end
 
+  namespace :rowing do
+    get 'home'
+    get 'history'
+    get 'donate'
+    get 'contact'
+  end
+
 
 end
