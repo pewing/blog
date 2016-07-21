@@ -1,0 +1,18 @@
+#rowing
+  nav#navbar.navbar.navbar-default
+    .container
+      .navbar-header
+        - unless content_for(:title) == 'Home'
+          .navbar-brand
+            = link_to image_tag('rowing_logo.jpg'), rowing_home_path
+      ul.nav.navbar-nav#rowing-navbar-pages
+        li.navbar-box.navbar-page
+          = link_to 'history', rowing_history_path, id: 'history-header'
+        li.navbar-box.navbar-page
+          = link_to 'donate', rowing_donate_path, id: 'rowing-header'
+        li.navbar-box.navbar-page
+          = link_to 'contact', contact_path, id: 'contact-header'
+
+  .container-fluid
+    #background-image
+      #background-text
