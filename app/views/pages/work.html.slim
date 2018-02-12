@@ -7,24 +7,22 @@
         #work-intro-photo
           = image_tag 'linkedin_profile.jpg', class: 'img-responsive'
         p.text-justify#work-intro-text
-          | &emsp;I am a full stack developer that works mainly in Ruby on Rails, but have extensive experience working
-            in both Python and C++.
+          | &emsp;I am a full stack developer with a focus on backend; I spend most of my time coding in C# right now, 
+            although I am always open to technologies I haven't used before. 
           br
           br
-          | &emsp;I have been freelancing for the past&nbsp
-          = months_to_string(Date.today.month - Date.parse("2016-03-15").month)
-          | . My main client is a well-drilling company out in Connecticut. Although I have enjoyed the independence and learning experience
-            of working for myself, I look forward to joining a company again and being able to work with fellow
-            developers.
+          | &emsp;I graduated with a double major in Computer Science and Economics. I'm happy to say that I've had a 
+            wide variety of work experiences since then; I have been working at Practice Fusion for the past year and a half. 
+        br
+        br
 
   .container-fluid#ignore
     #skills-box.affix-top data-spy="affix"
       h4.text-left Languages
       ul.text-right#skills-list.nav
-        li#skills-ruby.show-all.show-freelance.show-hifi
-          | Ruby
-          a href="#work-freelance"
-          a href="#work-hifi"
+        li#skills-csharp.show-all.show-pf
+          | C#
+          a href="#work-pf"
           a href="#ignore"
         li#skills-python.show-all.show-hifi
           | Python
@@ -34,6 +32,11 @@
           | C++
           a href="#work-hifi"
           a href="#work-hamilton"
+          a href="#ignore"
+        li#skills-ruby.show-all.show-freelance.show-hifi
+          | Ruby
+          a href="#work-freelance"
+          a href="#work-hifi"
           a href="#ignore"
         li#skills-rails.show-all.show-freelance.show-hifi
           | Rails
@@ -48,19 +51,18 @@
           | Ansible
           a href="#work-hifi"
           a href="#ignore"
-        li#skills-bash.show-all.show-hifi
-          | Bash
-          a href="#work-hifi"
-          a href="#work-hamilton"
-          a href="#ignore"
         li#skills-jquery.show-all.show-freelance.show-hifi
           | jQuery
           a href="#work-freelance"
           a href="#work-hifi"
           a href="#ignore"
-        li#skills-node.show-all.show-hifi
-          | Node.js
-          a href="#work-hifi"
+        li#skills-react.show-all.show-pf
+          | React
+          a href="#work-pf"
+          a href="#ignore"
+        li#skills-ember.show-all.show-pf
+          | Ember
+          a href="#work-pf"
           a href="#ignore"
         li#skills-phantom.show-all.show-hifi
           | PhantomJS
@@ -77,6 +79,23 @@
     .row#work-experience
       .col-xs-9
         ul.media-list
+          li.media#work-pf
+            /.pull-left
+            .work-experience-image
+              = image_tag 'pf_logo.png', class: 'media-object img-responsive'
+            .media-body
+              h4.media-heading Software Engineer
+              ul
+                li Full stack web developer with a wide range of responsibilities.
+                li Spearheading development of a robust test framework that allows test engineers 
+                   to write their own tests, freeing up developer time. 
+                li Contributed heavily to internal tool that monitors server health.
+                li Scrum master for a product team championing Agile development.
+              br
+              = link_to 'Practice Fusion', 'https://www.practicefusion.com/'
+              |  is a leading EHR with the highest customer satisfaction rate in the Ambulatory market.
+
+
           li.media#work-freelance
             /.pull-left
             .work-experience-image

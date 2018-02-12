@@ -1,7 +1,7 @@
 $('.pages.about').ready(function() {
 
     $.fn.scrollPath("getPath", {
-        scrollSpeed: 80, // Default is 50
+        scrollSpeed: 50, // Default is 50
         rotationSpeed: Math.PI / 10 // Default is Math.PI / 15
     })
         .moveTo(400, 50, {name: "start"})

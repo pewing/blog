@@ -16,6 +16,4 @@ Rails.application.routes.draw do
     get 'donate'
     get 'contact'
   end
-
-
 end
