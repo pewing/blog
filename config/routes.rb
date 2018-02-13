@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get 'about'
     get 'work'
     get 'contact'
+    get '/.well-known/acme-challenge/:id' => 'pages#encrypt'
   end
 
   namespace :rowing do
