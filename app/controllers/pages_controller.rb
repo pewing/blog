@@ -17,7 +17,6 @@ class PagesController < ApplicationController
   end
 
   def encrypt
-
     render text: "#{params[:id]}.UWlyDARvirny6x0vKFX_MyrJkSjOkrs1x3ojTNjlBwo"
   end
 end
