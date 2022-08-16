@@ -1,0 +1,17 @@
+@import "_common";
+
+.App {
+  background-color: $blue8;  
+  color: $blue1;
+  font-family: $font-family;
+  text-align: center;
+  height: 100%;
+  // display: flex;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
