@@ -1,0 +1,36 @@
+@import "src/_common";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 6px 6px 4px 6px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navlink {
+    padding: 25px 6px 4px 6px;
+
+    a {
+        padding: 0;
+        color: $blue1;
+        letter-spacing: 2px;
+        
+        &.nav-active {
+            color: $blue5;
+        }
+
+        &:link {
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $blue5;
+        }
+    }
+}
