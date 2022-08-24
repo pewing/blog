@@ -1,7 +1,29 @@
-.home {
+@import "src/_common";
+
+.contact {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 100%;
+
+    ul {
+        position: relative;
+        // left: 50%;
+        list-style: none;
+        margin: auto;
+        font-style: italic;
+    }
+
+    a {
+        color: $blue4;
+        font-weight: bold;
+  
+        &:link {
+          text-decoration: none;
+        }
+        &:hover {
+          color: #ea8602;
+        }
+    }
 }
