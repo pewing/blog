@@ -7,12 +7,11 @@ import "./Header.scss";
 const Header = () => {
     return (
         <div className="header">
-                <div className="logo">
-                    <Link to={'/'}>
-                        <img src={logo} alt={"PE"} />
-                    </Link>
-                </div>
-            
+            <div className="logo-header">
+                <Link to={'/'}>
+                    <img src={logo} alt={"PE"} />
+                </Link>
+            </div>
             <div className="navbar">
                 <div className="navlink">
                     <Link to={'/about'}>
