@@ -4,4 +4,14 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+
+    .logo {
+        position: relative;
+  
+        .logo-main {
+            position: relative;
+            // margin: 0 auto;
+            z-index: 2;
+        }
+    }
 }

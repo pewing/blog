@@ -1,0 +1,39 @@
+.dots {
+    max-width: 766px;
+    max-height: 272px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+    .dot-sf {
+        top: 76.2%;
+        left: 7.9%;
+    }
+    .dot-ottawa {
+        top: 58.7%;
+        left: 35.8%;
+    }
+    .dot-hamilton {
+        top: 63.6%;
+        left: 36%;
+    }
+    .dot-nyc {
+        top: 69.6%;
+        left: 36.9%;
+    }
+    .dot-stockholm {
+        top: 19.6%;
+        left: 92.2%;
+    }
+    .dot-strasbourg {
+        top: 51.3%;
+        left: 85.9%;
+    }
+    .dot-geneva {
+        top: 56.9%;
+        left: 85%;
+    }
+}
